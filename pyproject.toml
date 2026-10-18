@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "archaeal-dbd-catalog"
+version = "0.1.0"
+description = "Reproducibility tools for a catalog of noncanonical archaeal HTH and RHH DNA-binding domain families"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+  {name = "Ajay Vellanki"},
+  {name = "Shaurya Dosapati"},
+]
+dependencies = [
+  "matplotlib==3.9.4",
+  "numpy==2.0.2",
+  "pandas==2.3.3",
+  "scipy==1.13.1",
+]
+
+[project.optional-dependencies]
+test = ["pytest==8.3.5"]
+
+[project.scripts]
+archaeal-dbd = "archaeal_dbd.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+

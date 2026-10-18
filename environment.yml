@@ -1,0 +1,16 @@
+name: archaeal-dbd-catalog
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.12
+  - hmmer=3.4
+  - mmseqs2=15.6f452
+  - mafft=7.526
+  - trimal=1.4.1
+  - iqtree=2.3.6
+  - foldseek=9.427df8a
+  - pip
+  - pip:
+      - -r requirements.txt
+

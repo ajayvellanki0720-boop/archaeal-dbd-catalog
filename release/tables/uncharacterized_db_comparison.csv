@@ -1,0 +1,80 @@
+family_id,dom_class,dominant_pfam,n_members,n_genomes,n_phyla,cd_hit,cd_hit_type,cd_best_acc,cd_best_name,cd_best_eval,cd_hit_is_functional,struct_best_fold,struct_best_tm,struct_matches_fold,resolution
+nArcR-124,uncharacterized_DUF,DUF8599,15,15,1,no,,,,,,Fur_FeDep,0.4363,False,genuinely_unresolved
+nArcR-127,uncharacterized_DUF,DUF7557,14,14,1,no,,,,,,,,False,genuinely_unresolved
+nArcR-2,uncharacterized_DUF,DUF7344,984,88,2,no,,,,,,,,False,genuinely_unresolved
+nArcR-216,uncharacterized_DUF,DUF7557,6,5,3,no,,,,,,,,False,genuinely_unresolved
+nArcR-49,uncharacterized_DUF,DUF7557,65,59,2,no,,,,,,Homeodomain,0.3454,False,genuinely_unresolved
+nArcR-68,uncharacterized_DUF,DUF7557,37,32,2,no,,,,,,,,False,genuinely_unresolved
+nArcR-71,uncharacterized_DUF,DUF7557,36,22,3,no,,,,,,,,False,genuinely_unresolved
+nArcR-88,uncharacterized_DUF,DUF7344,26,24,1,no,,,,,,wHTH_HxlR,0.5459,False,genuinely_unresolved
+nArcR-9,uncharacterized_DUF,DUF7123,288,95,2,no,,,,,,,,False,genuinely_unresolved
+nArcR-103,uncharacterized_DUF,DUF7387,18,16,1,yes,specific,COG1598,HicB,0.00154931,yes,,,False,resolved_by_CDD
+nArcR-105,uncharacterized_DUF,DUF7343,18,18,1,yes,specific,COG2512,COG2512,4.10077e-09,yes,ArsR_SmtB,0.8592,True,resolved_by_CDD
+nArcR-115,uncharacterized_cryptic,HVO_A0114,16,16,2,yes,superfamily,cl28562,COG4190 superfamily,1.81242e-16,yes,ArsR_SmtB,0.8895,True,resolved_by_CDD
+nArcR-116,uncharacterized_DUF,DUF2683,16,11,3,yes,superfamily,cl12468,DUF2683 superfamily,1.62747e-14,no,RHH_CopG,0.9054,True,resolved_by_CDD
+nArcR-117,uncharacterized_cryptic,HVO_B0008_C,16,16,1,yes,superfamily,cl34204,Mcm2 superfamily,1.37093e-06,yes,DtxR,0.7087,True,resolved_by_CDD
+nArcR-120,uncharacterized_DUF,DUF7343,15,15,1,yes,specific,COG2512,COG2512,2.35812e-26,yes,,,False,resolved_by_CDD
+nArcR-125,uncharacterized_DUF,DUF7347,15,14,2,yes,specific,cd00090,HTH_ARSR,4.99473e-06,yes,ArsR_SmtB,0.7859,True,resolved_by_CDD
+nArcR-134,uncharacterized_DUF,DUF7123,13,13,1,yes,superfamily,cl27787,COG4584 superfamily,0.00123924,yes,Ribbon_HTH_TFIIB,0.7726,True,resolved_by_CDD
+nArcR-138,uncharacterized_DUF,DUF2250,12,12,1,yes,superfamily,cl46773,DUF2250 superfamily,7.78119e-09,no,wHTH_MarR,0.8947,True,resolved_by_CDD
+nArcR-143,uncharacterized_DUF,DUF8612,11,9,2,yes,superfamily,cl26115,COG1373 superfamily,1.07961e-32,yes,RHH_CopG,0.8708,True,resolved_by_CDD
+nArcR-148,uncharacterized_DUF,DUF6364,10,8,4,yes,superfamily,cl45279,DUF6364 superfamily,1.69921e-08,no,,,False,resolved_by_CDD
+nArcR-155,uncharacterized_cryptic,PF0095-like_C,9,9,1,yes,specific,COG1777,COG1777,3.75298e-20,yes,AraC,0.7686,True,resolved_by_CDD
+nArcR-156,uncharacterized_DUF,DUF7343,9,9,1,yes,specific,COG2512,COG2512,8.05715e-17,yes,Lrp_AsnC,0.9905,True,resolved_by_CDD
+nArcR-160,uncharacterized_DUF,DUF2250,9,9,2,yes,specific,COG4344,COG4344,6.83201e-39,yes,SorC,0.9346,True,resolved_by_CDD
+nArcR-161,uncharacterized_DUF,DUF433,9,8,1,yes,specific,COG2442,COG2442,1.09123e-09,yes,Rrf2,0.8911,True,resolved_by_CDD
+nArcR-165,uncharacterized_DUF,DUF5371,8,7,1,yes,superfamily,cl38625,DUF5371 superfamily,9.93252e-21,no,DtxR,0.6925,True,resolved_by_CDD
+nArcR-184,uncharacterized_DUF,DUF7343,7,6,2,yes,specific,COG2512,COG2512,5.5336e-18,yes,wHTH_HxlR,0.8282,True,resolved_by_CDD
+nArcR-188,uncharacterized_DUF,DUF6364,7,7,3,yes,superfamily,cl45279,DUF6364 superfamily,3.28296e-07,no,RHH_CopG,0.706,True,resolved_by_CDD
+nArcR-189,uncharacterized_DUF,DUF7343,7,7,1,yes,specific,COG2512,COG2512,2.73082e-15,yes,ArsR_SmtB,0.8564,True,resolved_by_CDD
+nArcR-19,uncharacterized_cryptic,PF0610-like_N,144,144,6,yes,superfamily,cl20181,COG3357 superfamily,5.00356e-28,yes,OmpR_PhoB_wHTH,0.7651,True,resolved_by_CDD
+nArcR-196,uncharacterized_DUF,DUF2582,7,7,1,yes,superfamily,cl11364,DUF2582 superfamily,1.05316e-16,no,Fur_FeDep,0.7253,True,resolved_by_CDD
+nArcR-198,uncharacterized_cryptic,HVO_A0114,6,6,1,yes,superfamily,cl28357,cas_HTH superfamily,2.0359e-21,yes,wHTH_HxlR,0.8482,True,resolved_by_CDD
+nArcR-201,uncharacterized_DUF,DUF7120,6,6,1,yes,specific,cd22231,RHH_NikR_HicB-like,1.13807e-08,yes,Homeodomain,0.4595,False,resolved_by_CDD
+nArcR-203,uncharacterized_cryptic,HVO_A0114,6,6,2,yes,superfamily,cl28562,COG4190 superfamily,9.62464e-18,yes,,,False,resolved_by_CDD
+nArcR-21,uncharacterized_DUF,DUF7120,133,82,2,yes,superfamily,cl41726,RHH_CopG_NikR-like superfamily,0.00129814,yes,RHH_NikR,0.7638,True,resolved_by_CDD
+nArcR-210,uncharacterized_DUF,DUF1016_N,6,5,3,yes,superfamily,cl40613,HTH_ParB superfamily,2.97847e-31,yes,LexA,0.4358,False,resolved_by_CDD
+nArcR-214,uncharacterized_DUF,DUF7347,6,6,1,yes,specific,cd00090,HTH_ARSR,9.26729e-07,yes,wHTH_MarR,0.7971,True,resolved_by_CDD
+nArcR-218,uncharacterized_DUF,DUF2250,6,6,2,yes,superfamily,cl46773,DUF2250 superfamily,1.19864e-24,no,HTH_CAP,0.8826,True,resolved_by_CDD
+nArcR-22,uncharacterized_DUF,DUF7342,123,58,2,yes,superfamily,cl46857,HTH_ARSR superfamily,0.00200008,yes,,,False,resolved_by_CDD
+nArcR-224,uncharacterized_DUF,DUF7347,6,6,2,yes,specific,COG1714,YckC,3.38791e-13,yes,,,False,resolved_by_CDD
+nArcR-230,uncharacterized_DUF,DUF433,5,5,1,yes,specific,COG2442,COG2442,3.64385e-08,yes,MerR,0.9784,True,resolved_by_CDD
+nArcR-235,uncharacterized_DUF,DUF2089,5,5,1,yes,specific,COG3877,COG3877,1.65783e-60,yes,Fis,0.9047,True,resolved_by_CDD
+nArcR-238,uncharacterized_DUF,DUF134,5,5,2,yes,specific,COG1342,COG1342,1.52027e-29,yes,HTH_CAP,0.926,True,resolved_by_CDD
+nArcR-24,uncharacterized_DUF,DUF433,113,61,7,yes,specific,COG2442,COG2442,8.75011e-14,yes,,,False,resolved_by_CDD
+nArcR-241,uncharacterized_DUF,DUF7347,5,5,3,yes,specific,COG0640,ArsR,3.56713e-10,yes,,,False,resolved_by_CDD
+nArcR-28,uncharacterized_cryptic,HVO_A0114,100,50,2,yes,specific,COG4190,COG4190,6.06911e-36,yes,Fur_FeDep,0.7581,True,resolved_by_CDD
+nArcR-34,uncharacterized_DUF,DUF5817_CT,82,82,2,yes,specific,pfam19134,DUF5817,4.42715e-13,no,TBP_archaeal,0.9159,True,resolved_by_CDD
+nArcR-35,uncharacterized_DUF,DUF5805,82,81,2,yes,specific,pfam19121,DUF5805,4.29598e-11,no,RHH_NikR,0.9377,True,resolved_by_CDD
+nArcR-36,uncharacterized_DUF,DUF7387,82,53,4,yes,superfamily,cl46829,PHD_like superfamily,0.00922449,yes,SorC,0.5744,True,resolved_by_CDD
+nArcR-37,uncharacterized_DUF,DUF7119,81,81,2,yes,superfamily,cl34278,Spo0J superfamily,9.9641e-06,yes,RHH_Arc,0.8891,True,resolved_by_CDD
+nArcR-41,uncharacterized_DUF,DUF6432,79,79,1,yes,specific,pfam20024,DUF6432,2.6501e-42,no,Fur_FeDep,0.7855,True,resolved_by_CDD
+nArcR-42,uncharacterized_cryptic,HVO_2718,79,78,2,yes,specific,COG1813,aMBF1,5.32872e-11,yes,Zn_ribbon,1.097,True,resolved_by_CDD
+nArcR-43,uncharacterized_DUF,DUF434,78,77,5,yes,specific,COG2454,COG2454,3.6582e-80,yes,Ribbon_HTH_TFIIB,0.6,True,resolved_by_CDD
+nArcR-44,uncharacterized_DUF,DUF134,78,75,6,yes,specific,COG1342,COG1342,4.83087e-34,yes,RHH_CopG,0.8728,True,resolved_by_CDD
+nArcR-54,uncharacterized_DUF,DUF1699,58,10,1,yes,specific,pfam08004,DUF1699,1.46968e-77,no,Homeodomain,0.6591,True,resolved_by_CDD
+nArcR-57,uncharacterized_DUF,DUF7317,49,37,1,yes,superfamily,cl47309,COG2886 superfamily,5.15672e-05,yes,HTH_Cro_lambda,0.7706,True,resolved_by_CDD
+nArcR-58,uncharacterized_cryptic,NirdL-like_HTH,47,24,2,yes,specific,pfam17805,AsnC_trans_reg2,9.7729e-28,yes,,,False,resolved_by_CDD
+nArcR-59,uncharacterized_cryptic,HVO_A0261_N,45,38,3,yes,specific,cd00090,HTH_ARSR,3.07377e-06,yes,HTH_Cro_lambda,0.8353,True,resolved_by_CDD
+nArcR-63,uncharacterized_DUF,DUF2250,39,38,4,yes,specific,COG4344,COG4344,1.29163e-33,yes,ArsR_SmtB,0.8498,True,resolved_by_CDD
+nArcR-70,uncharacterized_DUF,DUF2551,36,25,1,yes,superfamily,cl12414,DUF2551 superfamily,2.42923e-26,no,,,False,resolved_by_CDD
+nArcR-77,uncharacterized_DUF,DUF7342,32,27,2,yes,superfamily,cl28554,YrhO superfamily,0.00578846,yes,,,False,resolved_by_CDD
+nArcR-78,uncharacterized_DUF,DUF7343,31,27,1,yes,specific,COG2512,COG2512,5.83289e-20,yes,IclR,0.8215,True,resolved_by_CDD
+nArcR-87,uncharacterized_DUF,DUF134,26,21,2,yes,specific,COG1342,COG1342,3.43877e-47,yes,ZnFinger_C2H2,0.8603,True,resolved_by_CDD
+nArcR-89,uncharacterized_DUF,DUF433,26,18,6,yes,specific,COG2442,COG2442,1.34032e-26,yes,NrdR,0.621,True,resolved_by_CDD
+nArcR-92,uncharacterized_DUF,DUF7343,23,21,1,yes,specific,COG2512,COG2512,2.50232e-17,yes,Lrp_AsnC,0.9716,True,resolved_by_CDD
+nArcR-99,uncharacterized_DUF,DUF7343,19,18,1,yes,specific,COG2512,COG2512,2.43742e-19,yes,Lrp_AsnC,0.979,True,resolved_by_CDD
+nArcR-114,uncharacterized_DUF,DUF7387,17,17,1,no,,,,,,AbrB_swapped,0.6243,True,structure_only
+nArcR-12,uncharacterized_DUF,DUF7344,229,54,1,no,,,,,,HTH_Cro_lambda,0.6781,True,structure_only
+nArcR-147,uncharacterized_DUF,DUF7344,10,10,1,no,,,,,,ArsR_SmtB,0.6045,True,structure_only
+nArcR-152,uncharacterized_DUF,DUF7387,9,9,1,no,,,,,,DeoR,0.6203,True,structure_only
+nArcR-175,uncharacterized_DUF,DUF7344,8,8,1,no,,,,,,wHTH_HxlR,0.6497,True,structure_only
+nArcR-176,uncharacterized_DUF,DUF7344,8,8,1,no,,,,,,wHTH_HxlR,0.5992,True,structure_only
+nArcR-179,uncharacterized_DUF,DUF7557,8,8,2,no,,,,,,Homeodomain,0.7699,True,structure_only
+nArcR-18,uncharacterized_DUF,DUF7342,151,64,1,no,,,,,,Fur_FeDep,0.7043,True,structure_only
+nArcR-190,uncharacterized_cryptic,HVO_A0261_N,7,7,1,no,,,,,,wHTH_HxlR,0.8755,True,structure_only
+nArcR-204,uncharacterized_DUF,DUF7669,6,6,1,no,,,,,,HTH_CAP,0.6136,True,structure_only
+nArcR-225,uncharacterized_DUF,DUF7692,6,5,1,no,,,,,,DeoR,0.6449,True,structure_only
+nArcR-240,uncharacterized_DUF,DUF7387,5,5,1,no,,,,,,AbrB_swapped,0.6872,True,structure_only
+nArcR-39,uncharacterized_DUF,DUF7346,80,80,2,no,,,,,,IclR,0.7084,True,structure_only
+nArcR-60,uncharacterized_DUF,DUF7692,44,25,1,no,,,,,,RHH_CopG,0.7385,True,structure_only

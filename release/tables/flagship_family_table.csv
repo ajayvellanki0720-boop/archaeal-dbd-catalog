@@ -1,0 +1,251 @@
+family_id,novelty,dominant_pfam,n_members,median_length_aa,n_genomes,n_phyla,mean_prevalence,max_copy,n_sig_categories,top_category,predicted_regulon_context,domain_validation,self_best_frac,struct_mapped,struct_mean_plddt
+nArcR-1,beyond19_characterized,HTH_24,1602,154.0,2950,7,0.8814551661427666,28,1,stress_USP,"stress_USP(FE=1.9,padj=1.1e-11)",PASS: coherent,1.0,1.0,81.7
+nArcR-32,beyond19_characterized,HTH_20,88,233.0,2586,7,0.7087367831525967,5,2,metabolism_biosynth,"metabolism_biosynth(FE=3.2,padj=4.3e-33); TA_toxin(FE=2.4,padj=3.1e-03)",PASS: coherent,1.0,1.0,85.5
+nArcR-8,beyond19_characterized,Fe_dep_repress,309,147.0,2153,7,0.5150126960345806,7,3,transporter_ABC,"transporter_ABC(FE=1.9,padj=4.7e-18); transport_other(FE=1.6,padj=1.5e-11); TA_toxin(FE=1.5,padj=3.6e-02)",REVIEW: mixed,0.0,1.0,89.5
+nArcR-7,beyond19_characterized,HxlR,322,124.0,1582,6,0.3337853215646082,15,2,oxidoreductase,"oxidoreductase(FE=1.6,padj=2.2e-13); transporter_MFS(FE=1.6,padj=3.1e-02)",PASS: coherent + homogeneous,1.0,1.0,77.2
+nArcR-51,beyond19_characterized,B-block_TFIIIC,62,125.0,1571,5,0.3704376949799868,4,2,methyltransferase,"methyltransferase(FE=5.0,padj=6.8e-23); kinase(FE=1.8,padj=2.4e-02)",PASS: coherent + homogeneous,1.0,1.0,78.8
+nArcR-11,beyond19_characterized,Fe_dep_repr_C,234,217.0,1445,7,0.372240446397723,6,2,nucleotide_cyclase,"nucleotide_cyclase(FE=2.5,padj=2.3e-03); transporter_MFS(FE=1.7,padj=3.1e-02)",PASS: coherent + homogeneous,1.0,1.0,85.2
+nArcR-131,beyond19_characterized,HTH_24,13,98.0,1441,4,0.0999428605886716,8,0,none,no_significant_enrichment,PASS: coherent,1.0,1.0,96.7
+nArcR-33,beyond19_characterized,HTH_Cmi2_C,87,219.0,1366,5,0.1878035392851237,3,2,acetyltransferase,"acetyltransferase(FE=6.9,padj=3.1e-27); metallohydrolase(FE=1.8,padj=9.2e-04)",PASS: coherent + homogeneous,1.0,1.0,72.9
+nArcR-10,beyond19_characterized,VAPB_antitox,265,77.0,1272,7,0.3846565585891805,15,2,TA_toxin,"TA_toxin(FE=10.2,padj=6.0e-201); DNA_repair_replication(FE=1.6,padj=1.3e-04)",PASS: coherent + homogeneous,1.0,1.0,75.6
+nArcR-16,beyond19_characterized,HTH_HVO_0163_N,203,203.0,1264,6,0.1703580365868919,10,2,peptidase,"peptidase(FE=2.2,padj=7.1e-09); kinase(FE=1.5,padj=4.9e-03)",PASS: coherent,1.0,1.0,74.8
+nArcR-17,beyond19_characterized,HTH_24,192,89.0,1222,6,0.2185399060825532,13,5,signal_HalOD1,"signal_HalOD1(FE=3.3,padj=1.3e-35); chaperone_proteostasis(FE=4.2,padj=1.1e-22); DNA_repair_replication(FE=2.4,padj=5.9e-18)",PASS: coherent,1.0,1.0,76.5
+nArcR-80,beyond19_characterized,HTH_20,29,92.0,1183,6,0.2433887563180343,9,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,80.8
+nArcR-23,beyond19_characterized,SMC_ScpB,119,191.0,1182,7,0.4967624597673466,6,1,signal_HalOD1,"signal_HalOD1(FE=3.8,padj=1.1e-25)",PASS: coherent + homogeneous,1.0,,
+nArcR-6,beyond19_characterized,PadR,388,131.0,1127,7,0.6214994789516874,12,3,transporter_ABC,"transporter_ABC(FE=2.1,padj=2.0e-36); transport_other(FE=1.9,padj=5.5e-28); transporter_MFS(FE=1.7,padj=1.6e-03)",PASS: coherent + homogeneous,1.0,,
+nArcR-201,uncharacterized,DUF7120,6,58.0,1091,3,0.0852142029347291,3,1,methyltransferase,"methyltransferase(FE=7.1,padj=2.9e-03)",PASS: coherent + homogeneous,1.0,1.0,87.8
+nArcR-15,beyond19_characterized,HTH_20,206,210.5,1078,5,0.0989137093640318,8,3,peptidase,"peptidase(FE=3.1,padj=1.0e-21); DNA_repair_replication(FE=1.8,padj=6.0e-07); chaperone_proteostasis(FE=1.7,padj=2.9e-02)",PASS: coherent + homogeneous,1.0,1.0,56.1
+nArcR-19,uncharacterized,PF0610-like_N,144,98.0,1052,6,0.3391340516635868,2,1,metabolism_biosynth,"metabolism_biosynth(FE=1.8,padj=2.9e-09)",PASS: coherent + homogeneous,1.0,1.0,76.3
+nArcR-3,beyond19_characterized,HTH_20,480,120.0,1025,5,0.1165057411311615,17,1,stress_USP,"stress_USP(FE=1.6,padj=2.9e-03)",PASS: coherent + homogeneous,1.0,1.0,67.0
+nArcR-9,uncharacterized,DUF7123,288,80.0,1011,2,0.0667615223593739,6,5,kinase,"kinase(FE=4.0,padj=2.2e-83); chaperone_proteostasis(FE=5.5,padj=7.5e-62); peptidase(FE=2.9,padj=1.9e-28)",PASS: coherent + homogeneous,1.0,,
+nArcR-42,uncharacterized,HVO_2718,79,174.0,986,6,0.1062397045051728,3,4,metallohydrolase,"metallohydrolase(FE=3.1,padj=8.1e-15); oxidoreductase(FE=1.5,padj=2.9e-03); acetyltransferase(FE=2.4,padj=8.9e-03)",PASS: coherent + homogeneous,1.0,1.0,75.2
+nArcR-2,uncharacterized,DUF7344,984,149.5,907,4,0.0628474709000128,84,2,signal_HalOD1,"signal_HalOD1(FE=2.4,padj=7.4e-83); regulator_HTH(FE=1.8,padj=2.2e-37)",PASS: coherent + homogeneous,1.0,,
+nArcR-29,beyond19_characterized,HTH_HVO_0163_N,97,170.0,897,5,0.0689792437391791,8,2,stress_USP,"stress_USP(FE=2.6,padj=8.4e-04); transporter_ABC(FE=1.5,padj=4.2e-03)",PASS: coherent + homogeneous,1.0,1.0,83.9
+nArcR-5,beyond19_characterized,HTH_45,434,94.0,869,7,0.4474307549676952,28,2,regulator_HTH,"regulator_HTH(FE=1.7,padj=3.2e-10); stress_USP(FE=2.2,padj=7.9e-03)",PASS: coherent + homogeneous,1.0,,
+nArcR-46,beyond19_characterized,HTH_20,74,112.0,841,4,0.1179904565779886,9,3,signal_HalOD1,"signal_HalOD1(FE=3.4,padj=4.2e-14); metabolism_biosynth(FE=1.7,padj=8.5e-04); methyltransferase(FE=2.3,padj=1.8e-03)",PASS: coherent + homogeneous,1.0,,
+nArcR-4,beyond19_characterized,PadR,477,95.0,836,3,0.0558618451813118,32,3,DNA_repair_replication,"DNA_repair_replication(FE=2.2,padj=4.8e-30); kinase(FE=1.8,padj=1.4e-12); regulator_HTH(FE=1.5,padj=5.2e-10)",PASS: coherent + homogeneous,1.0,1.0,74.1
+nArcR-25,beyond19_characterized,HxlR,105,118.0,814,5,0.0692464882479787,5,1,kinase,"kinase(FE=2.1,padj=2.9e-05)",PASS: coherent + homogeneous,1.0,1.0,74.8
+nArcR-53,beyond19_characterized,HTH_20,59,130.0,812,5,0.080836138468951,6,1,TA_toxin,"TA_toxin(FE=5.5,padj=6.2e-10)",PASS: coherent + homogeneous,1.0,1.0,85.5
+nArcR-21,uncharacterized,DUF7120,133,73.0,803,3,0.0612010571255968,7,4,metabolism_biosynth,"metabolism_biosynth(FE=3.0,padj=4.4e-42); chaperone_proteostasis(FE=3.4,padj=5.8e-11); peptidase(FE=2.4,padj=2.7e-08)",PASS: coherent + homogeneous,1.0,1.0,77.3
+nArcR-34,uncharacterized,DUF5817_CT,82,174.0,793,2,0.0520132003367128,2,4,oxidoreductase,"oxidoreductase(FE=3.0,padj=2.6e-31); TA_toxin(FE=7.7,padj=2.2e-27); peptidase(FE=2.7,padj=3.2e-07)",PASS: coherent + homogeneous,1.0,1.0,89.4
+nArcR-41,uncharacterized,DUF6432,79,99.0,774,2,0.0503154820879178,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,75.2
+nArcR-35,uncharacterized,DUF5805,82,133.0,759,2,0.0493694082941619,3,2,DNA_repair_replication,"DNA_repair_replication(FE=4.2,padj=7.1e-29); transporter_ABC(FE=1.5,padj=1.3e-02)",PASS: coherent + homogeneous,1.0,1.0,72.8
+nArcR-37,uncharacterized,DUF7119,81,224.0,754,2,0.0490540503629099,3,2,metallohydrolase,"metallohydrolase(FE=2.2,padj=4.1e-06); acetyltransferase(FE=3.1,padj=4.3e-04)",PASS: coherent + homogeneous,1.0,1.0,78.3
+nArcR-39,uncharacterized,DUF7346,80,143.0,752,2,0.0494272653004467,2,5,DNA_repair_replication,"DNA_repair_replication(FE=5.3,padj=7.2e-55); chaperone_proteostasis(FE=7.2,padj=1.8e-29); signal_HalOD1(FE=3.7,padj=2.7e-21)",PASS: coherent + homogeneous,1.0,1.0,84.0
+nArcR-36,uncharacterized,DUF7387,82,89.0,724,7,0.1208673782595128,6,2,TA_toxin,"TA_toxin(FE=10.7,padj=5.8e-54); DNA_repair_replication(FE=1.7,padj=1.2e-02)",PASS: coherent + homogeneous,1.0,1.0,88.7
+nArcR-20,beyond19_characterized,HicB_lk_antitox,141,72.0,690,7,0.21847429325193,22,2,TA_toxin,"TA_toxin(FE=11.7,padj=1.1e-137); DNA_repair_replication(FE=1.8,padj=3.4e-05)",PASS: coherent + homogeneous,1.0,,
+nArcR-65,beyond19_characterized,Sigma70_r4,39,155.0,677,4,0.0469715422981589,3,1,metallohydrolase,"metallohydrolase(FE=1.8,padj=4.2e-02)",PASS: coherent + homogeneous,1.0,1.0,79.6
+nArcR-47,beyond19_characterized,RHH_11,71,107.0,676,2,0.0436351085253416,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,87.4
+nArcR-38,beyond19_characterized,MarR_2,80,121.0,671,3,0.0449198470551569,11,1,TA_toxin,"TA_toxin(FE=7.9,padj=2.6e-32)",PASS: coherent + homogeneous,1.0,,
+nArcR-129,beyond19_characterized,HTH_20,13,112.0,666,6,0.1704174029141112,8,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,85.5
+nArcR-48,beyond19_characterized,WHD_halo_double,70,164.0,663,2,0.0423158197940489,2,2,metallohydrolase,"metallohydrolase(FE=5.3,padj=5.8e-42); methyltransferase(FE=2.1,padj=2.3e-02)",PASS: coherent + homogeneous,1.0,1.0,87.8
+nArcR-44,uncharacterized,DUF134,78,113.0,655,7,0.2852506088717499,3,2,transporter_ABC,"transporter_ABC(FE=1.7,padj=1.7e-03); regulator_HTH(FE=1.8,padj=1.8e-02)",PASS: coherent,0.6666666666666666,1.0,70.6
+nArcR-28,uncharacterized,HVO_A0114,100,139.0,651,3,0.0708117957610142,11,2,TA_toxin,"TA_toxin(FE=12.1,padj=2.5e-76); regulator_HTH(FE=2.0,padj=4.5e-06)",PASS: coherent + homogeneous,1.0,1.0,75.0
+nArcR-14,beyond19_characterized,WHD_phage_rep,228,88.0,648,4,0.0442816004925792,29,5,DNA_repair_replication,"DNA_repair_replication(FE=2.8,padj=4.7e-28); regulator_HTH(FE=2.0,padj=2.6e-13); restriction_modification(FE=5.3,padj=3.3e-09)",PASS: coherent + homogeneous,1.0,1.0,75.6
+nArcR-74,beyond19_characterized,ArsR,33,170.0,643,2,0.0415537461790786,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,91.1
+nArcR-45,beyond19_characterized,UPF0175,75,84.0,640,7,0.1641426438899221,18,1,TA_toxin,"TA_toxin(FE=6.4,padj=7.1e-26)",PASS: coherent + homogeneous,1.0,,
+nArcR-85,beyond19_characterized,PadR,27,96.0,624,2,0.0398560279302835,2,2,oxidoreductase,"oxidoreductase(FE=2.8,padj=1.2e-08); kinase(FE=3.1,padj=8.1e-04)",PASS: coherent + homogeneous,1.0,1.0,82.0
+nArcR-59,uncharacterized,HVO_A0261_N,45,93.0,603,5,0.090661099918697,17,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,82.7
+nArcR-49,uncharacterized,DUF7557,65,49.0,596,3,0.0391584212906399,3,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,74.2
+nArcR-50,beyond19_characterized,RHH_12,62,76.0,594,7,0.2427911126343859,7,1,TA_toxin,"TA_toxin(FE=9.3,padj=2.1e-42)",PASS: coherent + homogeneous,1.0,1.0,83.7
+nArcR-40,beyond19_characterized,PH0730-like_N,80,208.0,583,7,0.4300652928790248,7,2,TA_toxin,"TA_toxin(FE=2.3,padj=9.0e-03); regulator_HTH(FE=1.7,padj=4.7e-02)",PASS: coherent,1.0,,
+nArcR-18,uncharacterized,DUF7342,151,178.0,579,2,0.0375171646590533,16,3,TA_toxin,"TA_toxin(FE=8.3,padj=2.7e-60); DNA_repair_replication(FE=2.0,padj=1.1e-07); regulator_HTH(FE=1.7,padj=6.1e-06)",PASS: coherent + homogeneous,1.0,1.0,82.2
+nArcR-177,beyond19_characterized,RHH_3,8,127.0,577,6,0.2485779984345264,3,2,transporter_ABC,"transporter_ABC(FE=3.7,padj=1.2e-04); transport_other(FE=3.2,padj=1.0e-03)",PASS: coherent + homogeneous,1.0,1.0,86.0
+nArcR-24,uncharacterized,DUF433,113,91.0,571,7,0.1379058706496407,12,3,TA_toxin,"TA_toxin(FE=4.1,padj=5.3e-15); restriction_modification(FE=3.9,padj=1.2e-03); DNA_repair_replication(FE=1.6,padj=1.1e-02)",PASS: coherent + homogeneous,1.0,,
+nArcR-43,uncharacterized,DUF434,78,219.0,564,7,0.2604559506277598,2,1,nucleotide_cyclase,"nucleotide_cyclase(FE=3.0,padj=3.8e-02)",PASS: coherent + homogeneous,1.0,1.0,88.5
+nArcR-22,uncharacterized,DUF7342,123,179.0,542,2,0.0351835159677887,10,3,TA_toxin,"TA_toxin(FE=3.6,padj=1.3e-10); regulator_HTH(FE=1.9,padj=7.8e-07); DNA_repair_replication(FE=1.5,padj=2.0e-02)",PASS: coherent + homogeneous,1.0,,
+nArcR-26,beyond19_characterized,HTH_34,103,102.0,541,7,0.2694897042888948,7,2,transporter_ABC,"transporter_ABC(FE=2.5,padj=1.4e-15); transporter_MFS(FE=2.1,padj=1.4e-02)",PASS: coherent + homogeneous,1.0,1.0,81.5
+nArcR-12,uncharacterized,DUF7344,229,124.0,539,2,0.034494943099,20,1,signal_HalOD1,"signal_HalOD1(FE=1.8,padj=2.2e-06)",REVIEW: mixed,0.3333333333333333,1.0,75.0
+nArcR-55,beyond19_characterized,UPF0175,52,98.5,522,5,0.0698589989388957,4,1,TA_toxin,"TA_toxin(FE=8.2,padj=3.3e-25)",PASS: coherent + homogeneous,1.0,1.0,92.7
+nArcR-159,beyond19_characterized,DnaD_N,9,120.0,520,6,0.0941255290868936,4,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,88.1
+nArcR-91,beyond19_characterized,HTH_20,23,136.0,518,2,0.0332724619186963,7,2,regulator_HTH,"regulator_HTH(FE=2.4,padj=1.1e-02); DNA_repair_replication(FE=2.5,padj=1.2e-02)",PASS: coherent,1.0,1.0,88.3
+nArcR-109,beyond19_characterized,MarR_2,17,146.0,484,6,0.1088273694633082,7,3,transporter_MFS,"transporter_MFS(FE=4.6,padj=1.2e-06); transport_other(FE=2.8,padj=3.6e-05); metallohydrolase(FE=2.4,padj=3.8e-02)",PASS: coherent,1.0,1.0,86.5
+nArcR-64,beyond19_characterized,HTH_11,39,83.0,482,3,0.0339980334739075,19,1,TA_toxin,"TA_toxin(FE=6.5,padj=2.0e-08)",PASS: coherent,1.0,1.0,74.4
+nArcR-111,beyond19_characterized,MarR_2,17,228.0,469,4,0.0334518286698538,7,3,restriction_modification,"restriction_modification(FE=12.0,padj=2.3e-04); DNA_repair_replication(FE=2.7,padj=1.9e-02); regulator_HTH(FE=2.3,padj=3.7e-02)",PASS: coherent,1.0,1.0,85.5
+nArcR-31,beyond19_characterized,FUR,90,139.0,469,7,0.1838288554387508,3,3,methyltransferase,"methyltransferase(FE=2.1,padj=9.8e-04); DNA_repair_replication(FE=1.7,padj=8.0e-03); metallohydrolase(FE=1.7,padj=1.7e-02)",PASS: coherent + homogeneous,1.0,,
+nArcR-52,beyond19_characterized,HTH_20,60,174.0,463,5,0.1143148964309705,6,1,signal_HalOD1,"signal_HalOD1(FE=3.0,padj=7.5e-09)",PASS: coherent + homogeneous,1.0,1.0,87.2
+nArcR-13,beyond19_characterized,RHH_12,228,75.0,463,7,0.318824241582302,10,2,TA_toxin,"TA_toxin(FE=7.2,padj=1.0e-131); CRISPR_defense(FE=3.1,padj=1.4e-11)",PASS: coherent + homogeneous,1.0,1.0,60.6
+nArcR-81,beyond19_characterized,Sigma70_r4,29,136.0,448,5,0.0698141003356829,3,1,oxidoreductase,"oxidoreductase(FE=2.1,padj=9.4e-04)",PASS: coherent + homogeneous,1.0,1.0,88.4
+nArcR-70,uncharacterized,DUF2551,36,104.0,418,1,0.0263639230526647,3,1,transporter_MFS,"transporter_MFS(FE=4.6,padj=2.2e-02)",PASS: coherent + homogeneous,1.0,,
+nArcR-71,uncharacterized,DUF7557,36,78.0,402,5,0.097783232599735,10,1,TA_toxin,"TA_toxin(FE=13.7,padj=1.1e-37)",PASS: coherent + homogeneous,1.0,1.0,87.9
+nArcR-67,beyond19_characterized,PadR,38,175.0,385,3,0.0319847537641387,1,3,chaperone_proteostasis,"chaperone_proteostasis(FE=11.8,padj=1.1e-22); peptidase(FE=4.8,padj=1.4e-11); kinase(FE=3.6,padj=7.2e-09)",PASS: coherent + homogeneous,1.0,1.0,80.8
+nArcR-27,beyond19_characterized,Ribosomal_S25,101,105.0,383,6,0.4150391758000503,4,4,signal_HalOD1,"signal_HalOD1(FE=3.0,padj=2.2e-11); regulator_HTH(FE=2.5,padj=2.5e-09); metabolism_biosynth(FE=1.8,padj=1.3e-06)",PASS: coherent + homogeneous,1.0,1.0,65.5
+nArcR-30,beyond19_characterized,HTH_63,93,170.0,383,2,0.0246557756439385,11,3,methyltransferase,"methyltransferase(FE=3.1,padj=7.2e-09); stress_USP(FE=2.2,padj=6.4e-03); nucleotide_cyclase(FE=2.8,padj=3.4e-02)",PASS: coherent + homogeneous,1.0,1.0,66.0
+nArcR-57,uncharacterized,DUF7317,49,60.0,374,2,0.0250868475877601,3,3,DNA_repair_replication,"DNA_repair_replication(FE=2.5,padj=2.7e-05); chaperone_proteostasis(FE=3.4,padj=5.7e-04); oxidoreductase(FE=1.6,padj=1.7e-02)",PASS: coherent + homogeneous,1.0,1.0,73.1
+nArcR-87,uncharacterized,DUF134,26,175.0,372,4,0.0915432493134003,3,3,oxidoreductase,"oxidoreductase(FE=2.4,padj=7.1e-05); stress_USP(FE=13.3,padj=1.4e-04); metabolism_biosynth(FE=1.9,padj=5.6e-03)",PASS: coherent + homogeneous,1.0,1.0,76.9
+nArcR-58,uncharacterized,NirdL-like_HTH,47,160.0,348,6,0.0392652623170663,4,4,metabolism_biosynth,"metabolism_biosynth(FE=3.5,padj=1.2e-26); oxidoreductase(FE=2.4,padj=4.9e-07); signal_HalOD1(FE=2.4,padj=1.7e-04)",PASS: coherent + homogeneous,1.0,,
+nArcR-132,beyond19_characterized,HTH_24,13,77.0,311,4,0.0267800455256705,6,0,none,no_significant_enrichment,PASS: coherent,1.0,1.0,79.9
+nArcR-102,beyond19_characterized,MarR_2,18,168.0,309,4,0.0242036026718066,3,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,88.1
+nArcR-162,beyond19_characterized,WHD_MCM,9,59.0,305,5,0.1298631396339694,2,0,none,no_significant_enrichment,PASS: coherent,1.0,1.0,71.1
+nArcR-73,beyond19_characterized,HTH_24,33,116.0,300,2,0.0194208339851558,7,3,peptidase,"peptidase(FE=5.0,padj=1.1e-09); kinase(FE=3.2,padj=9.5e-06); metabolism_biosynth(FE=1.8,padj=1.7e-02)",PASS: coherent + homogeneous,1.0,1.0,82.0
+nArcR-179,uncharacterized,DUF7557,8,64.0,298,3,0.0218935034937974,6,2,TA_toxin,"TA_toxin(FE=11.4,padj=2.0e-08); regulator_HTH(FE=3.3,padj=4.5e-02)",PASS: coherent,1.0,1.0,88.4
+nArcR-150,beyond19_characterized,HTH_32,10,157.0,294,4,0.0244864154754452,16,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,84.7
+nArcR-84,beyond19_characterized,PadR,27,99.0,291,5,0.1007623488746021,2,2,transporter_MFS,"transporter_MFS(FE=7.7,padj=1.9e-06); transport_other(FE=2.0,padj=1.1e-02)",PASS: coherent + homogeneous,1.0,,
+nArcR-86,beyond19_characterized,HTH_32,26,157.0,289,6,0.0375512162207582,7,0,none,no_significant_enrichment,PASS: coherent,1.0,,
+nArcR-195,beyond19_characterized,HTH_7,7,138.0,288,4,0.0241731294287519,2,1,DNA_repair_replication,"DNA_repair_replication(FE=3.3,padj=4.5e-02)",PASS: coherent + homogeneous,1.0,1.0,88.2
+nArcR-186,beyond19_characterized,HTH_20,7,92.0,287,6,0.321451189015506,4,1,DNA_repair_replication,"DNA_repair_replication(FE=14.1,padj=1.5e-19)",PASS: coherent,1.0,1.0,83.4
+nArcR-78,uncharacterized,DUF7343,31,197.0,280,2,0.0200655651140788,4,1,signal_HalOD1,"signal_HalOD1(FE=2.6,padj=2.1e-03)",PASS: coherent + homogeneous,1.0,1.0,64.0
+nArcR-68,uncharacterized,DUF7557,37,49.0,271,2,0.0175917579838943,3,1,stress_USP,"stress_USP(FE=6.7,padj=3.8e-13)",PASS: coherent,0.6666666666666666,1.0,86.3
+nArcR-62,beyond19_characterized,PadR,40,166.0,270,2,0.0180280445076815,4,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,74.1
+nArcR-239,beyond19_characterized,DUF8612,5,109.0,250,2,0.0197627614428991,5,0,none,no_significant_enrichment,PASS: coherent,1.0,1.0,84.0
+nArcR-168,beyond19_characterized,HTH_7,8,199.0,250,6,0.0738629373155817,3,1,metabolism_biosynth,"metabolism_biosynth(FE=4.5,padj=4.0e-06)",PASS: coherent + homogeneous,1.0,1.0,84.7
+nArcR-187,beyond19_characterized,WHD_MCM,7,178.0,250,7,0.1820508728726497,14,1,CRISPR_defense,"CRISPR_defense(FE=6.2,padj=1.4e-02)",PASS: coherent + homogeneous,1.0,1.0,95.3
+nArcR-126,beyond19_characterized,AF_0843,14,133.0,244,5,0.0328684377570439,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,89.1
+nArcR-146,beyond19_characterized,HTH_27,10,103.0,241,4,0.1278151520769072,3,0,none,no_significant_enrichment,PASS: coherent,1.0,1.0,80.2
+nArcR-138,uncharacterized,DUF2250,12,96.5,236,2,0.0153842524651306,2,3,peptidase,"peptidase(FE=4.3,padj=7.3e-03); acetyltransferase(FE=5.0,padj=1.5e-02); metabolism_biosynth(FE=2.2,padj=3.8e-02)",PASS: coherent,1.0,1.0,80.1
+nArcR-56,beyond19_characterized,PqqD,50,100.0,232,6,0.1056979212085249,2,2,signal_HalOD1,"signal_HalOD1(FE=2.7,padj=7.6e-05); kinase(FE=2.0,padj=2.1e-02)",PASS: coherent + homogeneous,1.0,1.0,86.4
+nArcR-76,beyond19_characterized,LexA_DNA_bind,32,144.5,232,6,0.2172843181044696,9,2,kinase,"kinase(FE=2.9,padj=1.0e-03); chaperone_proteostasis(FE=3.3,padj=3.1e-02)",PASS: coherent,1.0,1.0,74.4
+nArcR-190,uncharacterized,HVO_A0261_N,7,79.0,221,2,0.0144381786713746,2,1,metallohydrolase,"metallohydrolase(FE=6.7,padj=1.6e-05)",PASS: coherent,1.0,1.0,96.0
+nArcR-77,uncharacterized,DUF7342,32,188.0,217,2,0.0141858923263731,4,3,TA_toxin,"TA_toxin(FE=8.1,padj=3.6e-14); DNA_repair_replication(FE=2.9,padj=6.5e-05); regulator_HTH(FE=2.4,padj=1.3e-03)",PASS: coherent + homogeneous,1.0,,
+nArcR-93,beyond19_characterized,HxlR,22,148.0,215,5,0.0350583848444427,3,1,oxidoreductase,"oxidoreductase(FE=2.0,padj=3.0e-02)",PASS: coherent + homogeneous,1.0,1.0,76.0
+nArcR-75,beyond19_characterized,HTH_24,32,173.0,215,3,0.0493636386608666,2,2,signal_HalOD1,"signal_HalOD1(FE=4.1,padj=3.6e-09); transporter_ABC(FE=2.0,padj=5.5e-03)",PASS: coherent + homogeneous,1.0,1.0,83.3
+nArcR-124,uncharacterized,DUF8599,15,83.0,212,1,0.0133711762850835,3,2,transporter_ABC,"transporter_ABC(FE=3.8,padj=1.6e-08); transport_other(FE=1.9,padj=2.6e-02)",PASS: coherent + homogeneous,1.0,1.0,88.8
+nArcR-95,beyond19_characterized,HTH_63,21,159.0,211,1,0.0133081046988331,3,1,stress_USP,"stress_USP(FE=4.1,padj=1.0e-02)",PASS: coherent + homogeneous,1.0,1.0,79.0
+nArcR-97,beyond19_characterized,UPF0175,19,122.0,204,3,0.016668176758207,3,2,TA_toxin,"TA_toxin(FE=6.5,padj=3.5e-06); regulator_HTH(FE=2.4,padj=2.0e-02)",PASS: coherent + homogeneous,1.0,1.0,86.2
+nArcR-66,beyond19_characterized,HTH_Crp_2,38,155.0,203,5,0.0934210190711161,3,1,chaperone_proteostasis,"chaperone_proteostasis(FE=4.0,padj=1.5e-04)",PASS: coherent,1.0,1.0,88.4
+nArcR-88,uncharacterized,DUF7344,26,209.0,202,1,0.0127404604225796,3,1,DNA_repair_replication,"DNA_repair_replication(FE=3.2,padj=6.5e-05)",PASS: coherent + homogeneous,1.0,1.0,79.6
+nArcR-139,beyond19_characterized,EarA,12,109.0,201,4,0.047144279832181,7,1,methyltransferase,"methyltransferase(FE=5.9,padj=2.5e-05)",PASS: coherent + homogeneous,1.0,1.0,89.6
+nArcR-103,uncharacterized,DUF7387,18,86.0,201,2,0.0131767469463668,3,1,TA_toxin,"TA_toxin(FE=14.9,padj=1.4e-25)",PASS: coherent + homogeneous,1.0,,
+nArcR-99,uncharacterized,DUF7343,19,186.0,194,7,0.0516702765963167,3,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,64.3
+nArcR-92,uncharacterized,DUF7343,23,157.0,194,3,0.017943623749634,3,2,regulator_HTH,"regulator_HTH(FE=3.3,padj=1.3e-07); oxidoreductase(FE=1.9,padj=1.2e-02)",PASS: coherent + homogeneous,1.0,1.0,71.3
+nArcR-101,beyond19_characterized,HxlR,19,118.0,190,6,0.0489438669581269,3,3,chaperone_proteostasis,"chaperone_proteostasis(FE=4.5,padj=2.9e-03); oxidoreductase(FE=2.1,padj=5.0e-03); TA_toxin(FE=3.6,padj=1.9e-02)",PASS: coherent + homogeneous,1.0,,
+nArcR-54,uncharacterized,DUF1699,58,135.0,188,1,0.0118574582150741,19,2,restriction_modification,"restriction_modification(FE=3.5,padj=5.4e-03); signal_HalOD1(FE=1.7,padj=3.9e-02)",PASS: coherent + homogeneous,1.0,1.0,82.6
+nArcR-116,uncharacterized,DUF2683,16,78.0,185,3,0.0678489095377786,5,2,TA_toxin,"TA_toxin(FE=8.0,padj=7.9e-09); acetyltransferase(FE=4.1,padj=3.4e-02)",PASS: coherent + homogeneous,1.0,1.0,86.3
+nArcR-221,beyond19_characterized,FaeA,6,117.0,183,3,0.0126428386348518,6,1,TA_toxin,"TA_toxin(FE=14.3,padj=6.1e-08)",PASS: coherent,1.0,1.0,76.0
+nArcR-141,beyond19_characterized,PadR,12,148.0,180,4,0.0212983015053448,3,1,transporter_ABC,"transporter_ABC(FE=5.7,padj=6.0e-07)",PASS: coherent + homogeneous,1.0,,
+nArcR-133,beyond19_characterized,HTH_OrfB_IS605,13,97.0,179,6,0.0588340038375709,6,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,70.9
+nArcR-125,uncharacterized,DUF7347,15,123.0,179,2,0.0119270224646149,4,1,transporter_MFS,"transporter_MFS(FE=12.0,padj=2.3e-04)",PASS: coherent + homogeneous,1.0,1.0,74.7
+nArcR-63,uncharacterized,DUF2250,39,212.0,168,4,0.0445932483305223,2,2,signal_HalOD1,"signal_HalOD1(FE=4.6,padj=1.7e-12); metallohydrolase(FE=3.0,padj=6.6e-07)",PASS: coherent + homogeneous,1.0,1.0,82.6
+nArcR-185,beyond19_characterized,MarR_2,7,216.0,167,1,0.0105329549038158,2,2,CRISPR_defense,"CRISPR_defense(FE=133.3,padj=1.3e-34); DNA_repair_replication(FE=7.8,padj=4.6e-10)",PASS: coherent,1.0,1.0,93.5
+nArcR-142,beyond19_characterized,UPF0150,11,86.0,164,4,0.0157625925593381,7,1,TA_toxin,"TA_toxin(FE=13.1,padj=3.4e-14)",PASS: coherent + homogeneous,1.0,1.0,87.5
+nArcR-112,beyond19_characterized,Fe_dep_repr_C,17,142.0,162,5,0.0322512057377964,2,2,transporter_ABC,"transporter_ABC(FE=3.9,padj=1.2e-08); transport_other(FE=2.4,padj=3.5e-04)",PASS: coherent + homogeneous,1.0,,
+nArcR-105,uncharacterized,DUF7343,18,130.0,160,2,0.0105908119101006,2,1,oxidoreductase,"oxidoreductase(FE=2.8,padj=1.4e-05)",PASS: coherent + homogeneous,1.0,1.0,74.2
+nArcR-115,uncharacterized,HVO_A0114,16,120.0,156,4,0.0470514091175227,4,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,87.4
+nArcR-60,uncharacterized,DUF7692,44,87.5,155,1,0.0097760958688111,5,2,DNA_repair_replication,"DNA_repair_replication(FE=3.5,padj=4.4e-09); restriction_modification(FE=11.0,padj=2.4e-07)",PASS: coherent + homogeneous,1.0,1.0,87.2
+nArcR-117,uncharacterized,HVO_B0008_C,16,124.0,153,1,0.0096499526963103,3,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,89.4
+nArcR-130,beyond19_characterized,VAPB_antitox,13,75.0,151,4,0.0229444911433393,2,1,TA_toxin,"TA_toxin(FE=8.2,padj=6.2e-08)",PASS: coherent + homogeneous,1.0,1.0,78.9
+nArcR-135,beyond19_characterized,PqqD,12,97.0,149,3,0.0157396354946898,2,1,metabolism_biosynth,"metabolism_biosynth(FE=3.7,padj=1.4e-06)",PASS: coherent + homogeneous,1.0,1.0,80.2
+nArcR-69,beyond19_characterized,PqqD,36,210.0,145,5,0.0905438276092008,3,1,oxidoreductase,"oxidoreductase(FE=2.1,padj=3.5e-05)",PASS: coherent + homogeneous,1.0,1.0,75.6
+nArcR-181,beyond19_characterized,UPF0175,8,98.0,145,6,0.0457148993291944,3,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,91.4
+nArcR-207,beyond19_characterized,UPF0175,6,195.0,142,6,0.065558391413446,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,84.2
+nArcR-143,uncharacterized,DUF8612,11,185.0,138,6,0.0432618046740449,4,1,signal_HalOD1,"signal_HalOD1(FE=3.8,padj=1.4e-02)",PASS: coherent + homogeneous,1.0,1.0,93.1
+nArcR-176,uncharacterized,DUF7344,8,112.0,137,1,0.008640807316304,2,1,acetyltransferase,"acetyltransferase(FE=10.7,padj=2.0e-05)",PASS: coherent + homogeneous,1.0,1.0,77.5
+nArcR-98,beyond19_characterized,HTH_32,19,152.0,134,5,0.0183229217416869,15,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-144,beyond19_characterized,HTH_78,10,206.5,134,3,0.0145479769839833,2,2,DNA_repair_replication,"DNA_repair_replication(FE=9.6,padj=1.4e-14); chaperone_proteostasis(FE=4.6,padj=2.1e-02)",PASS: coherent + homogeneous,1.0,1.0,89.7
+nArcR-107,beyond19_characterized,HTH_24,18,206.0,134,6,0.0789733666666982,2,2,CRISPR_defense,"CRISPR_defense(FE=37.4,padj=3.8e-106); DNA_repair_replication(FE=7.3,padj=2.8e-21)",PASS: coherent,1.0,,
+nArcR-155,uncharacterized,PF0095-like_C,9,232.0,132,2,0.0093241656051271,2,3,oxidoreductase,"oxidoreductase(FE=5.0,padj=2.7e-08); DNA_repair_replication(FE=6.8,padj=1.5e-07); CRISPR_defense(FE=10.0,padj=5.7e-04)",PASS: coherent + homogeneous,1.0,1.0,84.1
+nArcR-121,beyond19_characterized,HTH_AsnC-type,15,177.0,129,3,0.0163517766011638,5,2,transporter_ABC,"transporter_ABC(FE=3.6,padj=2.1e-07); transport_other(FE=1.8,padj=4.0e-02)",PASS: coherent,1.0,,
+nArcR-180,beyond19_characterized,wHTH-PRTase_assc,8,180.0,119,3,0.075286382408862,5,0,none,no_significant_enrichment,PASS: coherent,1.0,1.0,75.4
+nArcR-114,uncharacterized,DUF7387,17,73.0,117,1,0.0073793755912961,1,1,signal_HalOD1,"signal_HalOD1(FE=5.8,padj=8.1e-11)",PASS: coherent + homogeneous,1.0,1.0,78.9
+nArcR-79,beyond19_characterized,PadR,30,169.0,116,5,0.0733275490809728,6,1,oxidoreductase,"oxidoreductase(FE=6.0,padj=2.5e-46)",PASS: coherent + homogeneous,1.0,1.0,60.1
+nArcR-165,uncharacterized,DUF5371,8,68.0,115,2,0.0077525905288329,5,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,76.7
+nArcR-128,beyond19_characterized,HTH_63,13,224.0,111,1,0.0070009460737937,3,3,methyltransferase,"methyltransferase(FE=5.0,padj=2.7e-04); transporter_ABC(FE=2.7,padj=2.6e-03); transport_other(FE=2.2,padj=3.7e-03)",PASS: coherent + homogeneous,1.0,1.0,75.1
+nArcR-120,uncharacterized,DUF7343,15,215.0,109,1,0.0068748029012929,1,1,peptidase,"peptidase(FE=4.7,padj=2.1e-04)",PASS: coherent + homogeneous,1.0,,
+nArcR-151,beyond19_characterized,HTH_27,10,200.0,108,4,0.0664154822847846,4,2,methyltransferase,"methyltransferase(FE=7.1,padj=3.0e-05); regulator_HTH(FE=3.6,padj=5.5e-03)",PASS: coherent + homogeneous,1.0,1.0,75.1
+nArcR-72,beyond19_characterized,Ribosomal_S25,33,112.0,107,5,0.1029065719083556,1,1,regulator_HTH,"regulator_HTH(FE=2.2,padj=2.2e-02)",PASS: coherent + homogeneous,1.0,,
+nArcR-184,uncharacterized,DUF7343,7,169.0,106,4,0.0218419022170837,3,1,kinase,"kinase(FE=4.4,padj=2.3e-02)",PASS: coherent + homogeneous,1.0,1.0,63.5
+nArcR-89,uncharacterized,DUF433,26,79.0,106,7,0.1046141336779171,3,1,TA_toxin,"TA_toxin(FE=4.5,padj=7.4e-05)",PASS: coherent + homogeneous,1.0,1.0,82.5
+nArcR-196,uncharacterized,DUF2582,7,70.0,104,4,0.0154532236160707,2,1,metallohydrolase,"metallohydrolase(FE=6.4,padj=2.0e-04)",PASS: coherent + homogeneous,1.0,1.0,87.8
+nArcR-140,beyond19_characterized,Penicillinase_R,12,121.0,103,5,0.024394607513248,3,1,peptidase,"peptidase(FE=8.6,padj=9.7e-09)",PASS: coherent + homogeneous,1.0,,
+nArcR-205,beyond19_characterized,SatD,6,216.5,102,2,0.0121380624151268,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,88.0
+nArcR-127,uncharacterized,DUF7557,14,65.0,102,1,0.0064333017975402,2,1,TA_toxin,"TA_toxin(FE=8.8,padj=3.1e-08)",PASS: coherent,1.0,1.0,71.5
+nArcR-134,uncharacterized,DUF7123,13,74.0,99,1,0.006244087038789,3,2,signal_HalOD1,"signal_HalOD1(FE=4.9,padj=8.4e-07); regulator_HTH(FE=3.5,padj=9.2e-04)",PASS: coherent + homogeneous,1.0,1.0,92.7
+nArcR-61,beyond19_characterized,PBP2,41,76.0,91,2,0.0636573213356138,2,4,kinase,"kinase(FE=3.4,padj=1.1e-06); metabolism_biosynth(FE=2.1,padj=4.3e-05); signal_HalOD1(FE=2.8,padj=1.3e-04)",PASS: coherent + homogeneous,1.0,1.0,90.2
+nArcR-149,beyond19_characterized,PadR,10,185.0,90,3,0.0420462072596378,3,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-209,beyond19_characterized,Rrf2,6,147.0,89,1,0.005613371176285,1,1,regulator_HTH,"regulator_HTH(FE=7.6,padj=4.2e-06)",PASS: coherent + homogeneous,1.0,1.0,80.8
+nArcR-145,beyond19_characterized,HTH_45,10,91.0,88,4,0.0314234522092718,3,1,transport_other,"transport_other(FE=2.3,padj=3.7e-02)",PASS: coherent + homogeneous,1.0,1.0,92.6
+nArcR-199,beyond19_characterized,HTH_24,6,244.0,87,3,0.033472359585749,3,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,90.3
+nArcR-164,beyond19_characterized,WHD_phage_rep,9,196.0,86,1,0.0054241564175339,3,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,83.6
+nArcR-206,beyond19_characterized,Penicillinase_R,6,132.0,86,6,0.0451972080054207,2,2,peptidase,"peptidase(FE=4.8,padj=1.7e-02); DNA_repair_replication(FE=5.0,padj=3.1e-02)",PASS: coherent + homogeneous,1.0,,
+nArcR-157,beyond19_characterized,HTH_24,9,160.0,85,2,0.005860442941321,1,1,nucleotide_cyclase,"nucleotide_cyclase(FE=14.3,padj=7.4e-08)",PASS: coherent + homogeneous,1.0,1.0,95.3
+nArcR-82,beyond19_characterized,HTH_45,27,104.0,84,4,0.0513190318866336,4,1,metallohydrolase,"metallohydrolase(FE=2.7,padj=3.8e-02)",PASS: coherent + homogeneous,1.0,1.0,75.5
+nArcR-211,beyond19_characterized,HTH_20,6,217.5,84,5,0.1216025994430975,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,68.9
+nArcR-242,beyond19_characterized,FeoC,5,103.0,82,2,0.0080242503813256,3,1,transporter_ABC,"transporter_ABC(FE=3.3,padj=2.9e-02)",PASS: coherent + homogeneous,1.0,1.0,61.0
+nArcR-90,beyond19_characterized,DsrC,24,111.0,80,4,0.0326930395693291,3,1,oxidoreductase,"oxidoreductase(FE=3.1,padj=5.9e-11)",PASS: coherent + homogeneous,1.0,1.0,93.7
+nArcR-94,beyond19_characterized,RHH_12,21,75.0,79,6,0.0765864442367473,2,1,TA_toxin,"TA_toxin(FE=8.6,padj=9.9e-14)",PASS: coherent + homogeneous,1.0,1.0,80.3
+nArcR-148,uncharacterized,DUF6364,10,93.0,78,5,0.027955007822722,2,1,TA_toxin,"TA_toxin(FE=10.3,padj=6.4e-10)",PASS: coherent + homogeneous,1.0,1.0,77.6
+nArcR-147,uncharacterized,DUF7344,10,116.5,78,1,0.0049195837275307,2,1,DNA_repair_replication,"DNA_repair_replication(FE=4.0,padj=1.1e-02)",PASS: coherent + homogeneous,1.0,1.0,86.8
+nArcR-152,uncharacterized,DUF7387,9,91.0,73,1,0.0046042257962787,1,1,TA_toxin,"TA_toxin(FE=6.7,padj=5.1e-04)",PASS: coherent + homogeneous,1.0,1.0,85.5
+nArcR-247,beyond19_characterized,MarR_2,5,165.0,71,2,0.0101828432413646,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,91.0
+nArcR-246,beyond19_characterized,HxlR,5,146.0,70,1,0.0044150110375275,4,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,84.4
+nArcR-227,beyond19_characterized,HTH_20,5,130.0,69,1,0.0043519394512772,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,84.7
+nArcR-193,beyond19_characterized,PadR,7,154.0,69,7,0.0754639821242505,4,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-173,beyond19_characterized,HxlR,8,127.5,69,4,0.0155078930587996,9,1,oxidoreductase,"oxidoreductase(FE=3.0,padj=6.1e-04)",PASS: coherent + homogeneous,1.0,,
+nArcR-119,beyond19_characterized,CggR_N,15,206.0,67,2,0.0491339392900017,2,3,kinase,"kinase(FE=6.8,padj=7.9e-15); DNA_repair_replication(FE=4.8,padj=7.1e-09); oxidoreductase(FE=2.5,padj=4.3e-05)",PASS: coherent + homogeneous,1.0,1.0,91.2
+nArcR-154,beyond19_characterized,VAPB_antitox,9,75.0,65,5,0.1391882443723099,3,1,TA_toxin,"TA_toxin(FE=5.6,padj=5.8e-04)",PASS: coherent + homogeneous,1.0,1.0,73.0
+nArcR-106,beyond19_characterized,FaeA,18,74.0,65,4,0.035979230093127,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,89.3
+nArcR-123,beyond19_characterized,RHH_12,15,76.0,65,6,0.0325778320684793,4,1,TA_toxin,"TA_toxin(FE=8.7,padj=1.3e-11)",PASS: coherent + homogeneous,1.0,,
+nArcR-174,beyond19_characterized,PqqD,8,117.0,64,1,0.0040365815200252,2,1,metallohydrolase,"metallohydrolase(FE=5.0,padj=1.2e-03)",PASS: coherent + homogeneous,1.0,1.0,80.5
+nArcR-191,beyond19_characterized,HTH_AsnC-type,7,161.0,63,1,0.0039735099337748,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,76.8
+nArcR-172,beyond19_characterized,UPF0175,8,88.5,62,6,0.063301744320503,3,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-183,beyond19_characterized,Penicillinase_R,7,123.0,60,3,0.0176129887737542,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,84.0
+nArcR-192,beyond19_characterized,PadR,7,163.0,58,4,0.0173987679980252,2,1,transport_other,"transport_other(FE=2.7,padj=1.6e-02)",PASS: coherent + homogeneous,1.0,1.0,87.8
+nArcR-169,beyond19_characterized,HTH_OrfB_IS605,8,47.5,57,4,0.005264858432632,7,1,DNA_repair_replication,"DNA_repair_replication(FE=3.3,padj=1.7e-02)",PASS: coherent + homogeneous,1.0,1.0,77.9
+nArcR-189,uncharacterized,DUF7343,7,165.0,56,1,0.003532008830022,3,2,metabolism_biosynth,"metabolism_biosynth(FE=3.0,padj=2.9e-02); metallohydrolase(FE=3.3,padj=3.0e-02)",PASS: coherent + homogeneous,1.0,1.0,61.2
+nArcR-153,beyond19_characterized,DndE,9,124.0,55,3,0.0137260151839974,2,2,restriction_modification,"restriction_modification(FE=26.7,padj=3.8e-21); DNA_repair_replication(FE=4.1,padj=9.1e-03)",PASS: coherent + homogeneous,1.0,,
+nArcR-218,uncharacterized,DUF2250,6,160.0,54,3,0.0090028919739142,2,1,methyltransferase,"methyltransferase(FE=5.9,padj=9.3e-04)",PASS: coherent + homogeneous,1.0,1.0,93.0
+nArcR-83,beyond19_characterized,HTH_58,27,147.0,54,2,0.0376772756346633,1,2,regulator_HTH,"regulator_HTH(FE=2.9,padj=7.5e-05); nucleotide_cyclase(FE=7.0,padj=1.2e-03)",PASS: coherent,1.0,1.0,82.9
+nArcR-194,beyond19_characterized,HTH_34,7,110.0,54,4,0.0134640563134849,3,1,TA_toxin,"TA_toxin(FE=8.5,padj=2.7e-08)",PASS: coherent + homogeneous,1.0,1.0,89.7
+nArcR-122,beyond19_characterized,EAP30,15,241.0,53,3,0.0887721792879131,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-235,uncharacterized,DUF2089,5,119.0,52,1,0.0032797224850204,1,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,86.4
+nArcR-224,uncharacterized,DUF7347,6,240.5,51,5,0.0227378756511858,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-163,beyond19_characterized,HTH_20,9,233.0,49,3,0.0758300367204741,3,0,none,no_significant_enrichment,PASS: coherent,1.0,,
+nArcR-96,beyond19_characterized,HTH_AsnC-type,20,166.0,49,3,0.0309719386326058,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,85.4
+nArcR-136,beyond19_characterized,HTH_HVO_0163_N,12,205.5,46,5,0.0216172997808964,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-219,beyond19_characterized,HTH_45,6,92.5,45,6,0.0782402941146802,3,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,84.4
+nArcR-113,beyond19_characterized,HTH_45,17,90.0,43,7,0.0892739890655026,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,77.0
+nArcR-210,uncharacterized,DUF1016_N,6,95.5,42,3,0.0092426841839595,3,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,81.4
+nArcR-100,beyond19_characterized,HTH_24,19,105.0,42,2,0.0293435958454178,1,4,peptidase,"peptidase(FE=9.0,padj=2.6e-15); metabolism_biosynth(FE=3.4,padj=2.6e-09); oxidoreductase(FE=2.4,padj=7.2e-05)",PASS: coherent + homogeneous,1.0,1.0,87.8
+nArcR-175,uncharacterized,DUF7344,8,217.0,41,1,0.0025859350362661,2,1,signal_HalOD1,"signal_HalOD1(FE=4.6,padj=4.9e-03)",PASS: coherent + homogeneous,1.0,1.0,74.1
+nArcR-208,beyond19_characterized,PqqD,6,89.0,39,3,0.0210290561537746,1,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,84.0
+nArcR-137,beyond19_characterized,Fe_dep_repr_C,12,144.5,38,4,0.0372584517210643,2,2,transporter_ABC,"transporter_ABC(FE=5.1,padj=8.3e-10); transport_other(FE=4.9,padj=2.2e-08)",PASS: coherent + homogeneous,1.0,,
+nArcR-118,beyond19_characterized,HTH_45,16,85.0,38,5,0.1046623393240663,1,1,transporter_ABC,"transporter_ABC(FE=2.5,padj=5.4e-03)",PASS: coherent + homogeneous,1.0,1.0,89.9
+nArcR-156,uncharacterized,DUF7343,9,117.0,37,4,0.0228046656560008,3,2,peptidase,"peptidase(FE=5.1,padj=1.0e-03); methyltransferase(FE=5.4,padj=4.6e-03)",PASS: coherent,1.0,1.0,70.9
+nArcR-166,beyond19_characterized,PadR,8,193.5,36,4,0.0146020668275496,2,2,transporter_ABC,"transporter_ABC(FE=4.8,padj=3.4e-03); signal_HalOD1(FE=5.5,padj=1.0e-02)",PASS: coherent + homogeneous,1.0,,
+nArcR-161,uncharacterized,DUF433,9,103.0,35,1,0.0022075055187637,3,1,TA_toxin,"TA_toxin(FE=4.5,padj=4.5e-02)",PASS: coherent + homogeneous,1.0,1.0,90.2
+nArcR-158,beyond19_characterized,WHD_ArnR1,9,97.0,34,5,0.0483545084837173,3,1,DNA_repair_replication,"DNA_repair_replication(FE=3.7,padj=9.6e-03)",PASS: coherent,0.6666666666666666,1.0,76.4
+nArcR-226,beyond19_characterized,PadR,6,103.5,33,2,0.0025807204563005,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-216,uncharacterized,DUF7557,6,45.5,33,4,0.0105902431549421,6,1,DNA_repair_replication,"DNA_repair_replication(FE=4.0,padj=1.9e-02)",PASS: coherent + homogeneous,1.0,,
+nArcR-225,uncharacterized,DUF7692,6,82.0,32,1,0.0020182907600126,6,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,79.0
+nArcR-203,uncharacterized,HVO_A0114,6,129.5,30,5,0.0246050842562158,1,1,DNA_repair_replication,"DNA_repair_replication(FE=3.3,padj=2.6e-02)",PASS: coherent + homogeneous,1.0,,
+nArcR-250,beyond19_characterized,HTH_24,5,97.0,30,6,0.0426328388662802,2,2,signal_HalOD1,"signal_HalOD1(FE=5.7,padj=7.5e-03); peptidase(FE=4.6,padj=1.9e-02)",PASS: coherent + homogeneous,1.0,,
+nArcR-108,beyond19_characterized,PadR,18,110.5,29,3,0.0212488779807097,1,2,metabolism_biosynth,"metabolism_biosynth(FE=2.8,padj=2.3e-05); CRISPR_defense(FE=6.7,padj=5.6e-04)",PASS: coherent + homogeneous,1.0,1.0,66.0
+nArcR-202,beyond19_characterized,HTH_45,6,70.0,28,3,0.0092746563087872,1,0,none,no_significant_enrichment,PASS: coherent,1.0,1.0,86.0
+nArcR-228,beyond19_characterized,HTH_24,5,140.0,27,3,0.0099346001110983,2,1,metallohydrolase,"metallohydrolase(FE=4.1,padj=3.0e-02)",PASS: coherent,1.0,,
+nArcR-231,beyond19_characterized,HTH_IclR,5,149.0,26,1,0.0182072829131652,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,74.0
+nArcR-233,beyond19_characterized,HTH_IclR,5,65.0,26,6,0.0183547884205242,2,0,none,no_significant_enrichment,PASS: coherent,1.0,1.0,89.8
+nArcR-240,uncharacterized,DUF7387,5,85.0,26,1,0.0016398612425102,1,1,TA_toxin,"TA_toxin(FE=16.4,padj=1.1e-07)",PASS: coherent + homogeneous,1.0,1.0,88.0
+nArcR-241,uncharacterized,DUF7347,5,140.0,25,5,0.0326290121037719,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-178,beyond19_characterized,Fe_dep_repr_C,8,239.0,25,1,0.0015767896562598,1,2,transport_other,"transport_other(FE=4.9,padj=2.3e-11); transporter_ABC(FE=5.5,padj=3.7e-10)",PASS: coherent + homogeneous,1.0,1.0,88.5
+nArcR-160,uncharacterized,DUF2250,9,101.0,25,4,0.0152530202265867,1,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,91.4
+nArcR-171,beyond19_characterized,UPF0175,8,92.0,24,4,0.0102666709008114,2,1,TA_toxin,"TA_toxin(FE=4.4,padj=2.9e-03)",PASS: coherent + homogeneous,1.0,1.0,82.7
+nArcR-167,beyond19_characterized,HTH_24,8,154.0,24,4,0.0158953260265952,2,1,transporter_MFS,"transporter_MFS(FE=5.0,padj=5.6e-04)",PASS: coherent + homogeneous,1.0,1.0,91.0
+nArcR-222,beyond19_characterized,Fe_dep_repress,6,141.0,21,4,0.0187172119482161,1,1,regulator_HTH,"regulator_HTH(FE=4.5,padj=4.3e-02)",PASS: coherent + homogeneous,1.0,,
+nArcR-188,uncharacterized,DUF6364,7,105.0,21,5,0.0201356967882084,1,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,88.3
+nArcR-197,beyond19_characterized,HTH_45,7,91.0,21,2,0.013547011725044,3,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-248,beyond19_characterized,MarR_2,5,181.0,20,1,0.0140056022408963,1,1,metallohydrolase,"metallohydrolase(FE=5.3,padj=2.6e-02)",PASS: coherent,1.0,1.0,70.6
+nArcR-220,beyond19_characterized,HTH_AsnC-type,6,141.5,20,5,0.0158602696271679,1,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-198,uncharacterized,HVO_A0114,6,230.5,19,1,0.0133053221288515,2,2,CRISPR_defense,"CRISPR_defense(FE=32.6,padj=1.6e-36); DNA_repair_replication(FE=5.9,padj=7.6e-07)",PASS: coherent,1.0,1.0,88.3
+nArcR-104,beyond19_characterized,Sulfolobus_pRN,18,78.0,19,3,0.0170984571690549,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,85.5
+nArcR-170,beyond19_characterized,HxlR,8,167.0,19,4,0.011005346780639,1,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-217,beyond19_characterized,HTH_45,6,164.5,18,2,0.0124671916010498,1,2,transport_other,"transport_other(FE=2.5,padj=7.7e-03); metallohydrolase(FE=3.9,padj=2.2e-02)",PASS: coherent,1.0,1.0,88.4
+nArcR-236,beyond19_characterized,HTH_45,5,104.0,17,3,0.0111297029632106,2,2,signal_HalOD1,"signal_HalOD1(FE=5.6,padj=2.1e-02); oxidoreductase(FE=2.7,padj=4.9e-02)",PASS: coherent + homogeneous,1.0,,
+nArcR-244,beyond19_characterized,PadR,5,118.0,15,6,0.040117034172807,1,1,metabolism_biosynth,"metabolism_biosynth(FE=5.1,padj=8.4e-04)",PASS: coherent + homogeneous,1.0,1.0,84.6
+nArcR-234,beyond19_characterized,HTH_IclR,5,220.0,15,1,0.0105042016806722,2,2,CRISPR_defense,"CRISPR_defense(FE=40.0,padj=2.4e-22); DNA_repair_replication(FE=4.3,padj=6.2e-03)",PASS: coherent,1.0,1.0,92.3
+nArcR-214,uncharacterized,DUF7347,6,86.0,13,3,0.0073696803840444,1,2,methyltransferase,"methyltransferase(FE=5.6,padj=2.1e-02); metallohydrolase(FE=5.3,padj=2.6e-02)",PASS: coherent + homogeneous,1.0,1.0,92.2
+nArcR-245,beyond19_characterized,HTH_24,5,172.0,13,1,0.0091036414565826,1,1,nucleotide_cyclase,"nucleotide_cyclase(FE=14.3,padj=4.8e-04)",PASS: coherent,1.0,1.0,82.8
+nArcR-230,uncharacterized,DUF433,5,183.0,12,1,0.0084033613445378,1,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,85.6
+nArcR-215,beyond19_characterized,Rrf2,6,131.5,12,2,0.0017555752550798,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-204,uncharacterized,DUF7669,6,224.0,11,1,0.0077030812324929,1,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,85.5
+nArcR-243,beyond19_characterized,Fe_dep_repress,5,138.0,11,2,0.0075652308167361,1,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,86.8
+nArcR-249,beyond19_characterized,HTH_18,5,176.0,11,4,0.0194439940473839,1,1,methyltransferase,"methyltransferase(FE=12.9,padj=7.6e-07)",PASS: coherent + homogeneous,1.0,1.0,88.0
+nArcR-182,beyond19_characterized,HTH_24,8,125.0,10,1,0.0070028011204481,2,1,signal_HalOD1,"signal_HalOD1(FE=3.4,padj=4.1e-02)",PASS: coherent + homogeneous,1.0,1.0,89.5
+nArcR-212,beyond19_characterized,UPF0175,6,79.0,10,4,0.0078057054361013,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,88.6
+nArcR-232,beyond19_characterized,PBP2,5,74.0,8,1,0.0056022408963585,1,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-200,beyond19_characterized,PadR,6,109.5,8,4,0.0605694788735747,1,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-238,uncharacterized,DUF134,5,167.0,7,2,0.0034376497639781,2,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,1.0,72.6
+nArcR-229,beyond19_characterized,HTH_45,5,86.0,6,1,0.0042016806722689,2,2,TA_toxin,"TA_toxin(FE=5.6,padj=3.4e-03); regulator_HTH(FE=4.8,padj=7.5e-03)",PASS: coherent + homogeneous,1.0,1.0,89.8
+nArcR-223,beyond19_characterized,HTH_45,6,190.0,5,1,0.003501400560224,2,2,oxidoreductase,"oxidoreductase(FE=2.8,padj=4.2e-03); peptidase(FE=5.6,padj=2.2e-02)",PASS: coherent + homogeneous,1.0,1.0,77.3
+nArcR-213,beyond19_characterized,HTH_Tnp_4,6,119.0,3,3,0.0012576125341186,1,0,none,no_significant_enrichment,PASS: coherent + homogeneous,1.0,,
+nArcR-237,beyond19_characterized,HTH_45,5,97.0,3,1,0.0018963337547408,1,2,acetyltransferase,"acetyltransferase(FE=120.0,padj=5.9e-10); signal_HalOD1(FE=5.0,padj=3.1e-02)",PASS: coherent + homogeneous,1.0,1.0,87.3
+nArcR-110,beyond19_characterized,PAX,17,124.0,1,1,0.0005624296962879,2,0,none,no_significant_enrichment,PASS: coherent,1.0,,

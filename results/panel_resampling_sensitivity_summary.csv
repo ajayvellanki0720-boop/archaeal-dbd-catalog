@@ -1,0 +1,4 @@
+scheme,n_genomes,replicates,families_detected_at_least_once_median,families_detected_at_least_once_q025,families_detected_at_least_once_q975,families_retaining_five_genomes_median,families_retaining_five_genomes_q025,families_retaining_five_genomes_q975
+equal_cap_30,157,500,242.0,235.0,247.0,137.0,127.0,147.52499999999998
+proportional_80,264,500,250.0,250.0,250.0,212.0,204.0,220.0
+rare_full_major_80,289,500,250.0,250.0,250.0,224.0,218.0,231.0
