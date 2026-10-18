@@ -1,0 +1,3 @@
+overlap_threshold,score_tolerance_bits,retained
+0.5,5.0,0
+0.5,2.0,1

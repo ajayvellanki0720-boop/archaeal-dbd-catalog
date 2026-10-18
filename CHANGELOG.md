@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0 - 2026-10-18
+
+- Added genus-blocked motif validation with zero train/test genus overlap.
+- Added source, assembly-level, and reported-quality sensitivity analyses.
+- Added claim-calibrated main figures and a workflow figure.
+- Added a minimal worked example, container recipe, locked Python requirements, provenance documentation, and SHA-256 manifest generation.
+- Added a supplementary methods document, reporting checklist, experimental-validation plan, cover letter, and response-to-reviewers draft.
+- Replaced the manuscript's most interpretive figures and incorporated the stricter validation results and submission declarations.
+
 ## 0.2.0
 
 - Added 500 lineage-matched resamples from independent projection genomes, with explicit exclusion of discovery-panel accessions.

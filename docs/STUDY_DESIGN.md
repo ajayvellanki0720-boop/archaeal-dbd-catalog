@@ -31,6 +31,12 @@ This analysis does not repeat candidate scanning, reciprocal canonical exclusion
 
 The revised analysis uses genome-level 70/30 train and test splits for each of 12 motif-bearing families. Position weight matrices are learned only from training genomes and evaluated on held-out family upstreams. Dinucleotide-shuffled versions of each held-out sequence control for composition and local sequence dependence, while GC-matched upstreams from other families test family specificity. Across 30 seeded splits, 10 of 12 motifs produced an AUC above 0.5 against the other-family control in at least 26 resamples. nArcR-20 and nArcR-24 did not. Because repeated splits overlap, the resampling distributions are reported descriptively and are not treated as independent replicates for hypothesis testing.
 
+The additional genus-blocked analysis repeats this logic while holding out entire genera, with zero train/test genus overlap by construction. Seven of 12 families exceeded AUC 0.5 against other-family controls in at least 26 of 30 resamples. This asks whether an upstream signal transfers beyond the genera used to fit it. It remains a predictive sequence analysis and does not establish protein-DNA binding.
+
+## Genome-quality sensitivity
+
+The legacy accession-resolved projection was stratified by genome origin, assembly level, and reported completeness/contamination. Family prevalence and detection counts are reported for every stratum. The comparison is descriptive because these factors are confounded with lineage and with each other; it chiefly tests whether the catalog disappears when lower-quality assemblies are excluded.
+
 This is predictive sequence validation, not a biochemical binding assay. The nArcR-6 model showed weak held-out discrimination from other families (median AUC 0.580) despite failing the earlier shuffled-family assignment null, so it remains a low-confidence motif.
 
 ## Required experimental validation

@@ -6,6 +6,7 @@ from archaeal_dbd.audit import run_release_audit
 from archaeal_dbd.motif_holdout import auc, dinucleotide_shuffle
 from archaeal_dbd.panel import run_panel_sensitivity
 from archaeal_dbd.projection import run_independent_projection_resampling
+from archaeal_dbd.quality_sensitivity import run_quality_sensitivity
 from archaeal_dbd.thresholds import reciprocal_exclusion_grid
 
 
@@ -65,3 +66,24 @@ def test_motif_helpers_preserve_length_and_rank():
     shuffled = dinucleotide_shuffle(sequence, rng)
     assert len(shuffled) == len(sequence)
     assert auc(np.array([3.0, 4.0]), np.array([1.0, 2.0])) == 1.0
+
+
+def test_quality_sensitivity_accounts_for_all_projection_genomes(tmp_path):
+    out = run_quality_sensitivity(
+        ROOT / "release/data/presence_absence_matrix.csv",
+        ROOT / "release/data/projection_genome_metadata.csv",
+        tmp_path,
+    )
+    summary = pd.read_csv(out.summary)
+    origin = summary.loc[summary.stratification == "origin"]
+    assert origin.n_genomes.sum() == 3192
+    assert out.figure.exists()
+
+
+def test_versioned_genus_blocked_results_have_no_genus_overlap():
+    detail = pd.read_csv(ROOT / "results/genus_blocked_motif_replicates.csv")
+    summary = pd.read_csv(ROOT / "results/genus_blocked_motif_summary.csv")
+    assert len(detail) == 12 * 30
+    assert detail.genus_overlap.eq(0).all()
+    robust = summary.replicates_auc_above_0_5_vs_other_families.ge(26).sum()
+    assert robust == 7

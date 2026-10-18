@@ -1,0 +1,5 @@
+artifact,families,genomes,status,permitted_use
+release/data/presence_absence_matrix.csv,250,3192,"legacy accession-resolved matrix","independent projection resampling; quality sensitivity"
+release/data/copynumber_matrix.csv,250,3192,"legacy accession-resolved matrix","legacy copy-number summaries"
+release/tables/corrected_prevalence.csv,250,3526,"final aggregate summary","group-level prevalence reporting only"
+release/tables/genome_accounting.csv,,3526,"final genome accounting","fate and denominator accounting"
