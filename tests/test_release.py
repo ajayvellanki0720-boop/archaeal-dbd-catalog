@@ -3,7 +3,9 @@ from pathlib import Path
 import pandas as pd
 
 from archaeal_dbd.audit import run_release_audit
+from archaeal_dbd.motif_holdout import auc, dinucleotide_shuffle
 from archaeal_dbd.panel import run_panel_sensitivity
+from archaeal_dbd.projection import run_independent_projection_resampling
 from archaeal_dbd.thresholds import reciprocal_exclusion_grid
 
 
@@ -39,3 +41,27 @@ def test_reciprocal_exclusion_definition():
     assert result.loc[result.score_tolerance_bits == 5.0, "retained"].item() == 0
     assert result.loc[result.score_tolerance_bits == 2.0, "retained"].item() == 1
 
+
+def test_independent_projection_resampling(tmp_path):
+    out = run_independent_projection_resampling(
+        ROOT / "release/data/presence_absence_matrix.csv",
+        ROOT / "release/tables/genome_accounting.csv",
+        ROOT / "release/tables/discovery_panel.csv",
+        tmp_path,
+        replicates=5,
+        seed=20_000,
+    )
+    summary = pd.read_csv(out.summary).iloc[0]
+    assert summary["genomes_per_replicate"] == 331
+    assert summary["discovery_projection_overlap"] == 0
+    assert 230 <= summary["families_detected_median"] <= 250
+
+
+def test_motif_helpers_preserve_length_and_rank():
+    import numpy as np
+
+    rng = np.random.default_rng(7)
+    sequence = "ACGT" * 70
+    shuffled = dinucleotide_shuffle(sequence, rng)
+    assert len(shuffled) == len(sequence)
+    assert auc(np.array([3.0, 4.0]), np.array([1.0, 2.0])) == 1.0

@@ -1,0 +1,2 @@
+sampling_frame,replicates,genomes_per_replicate,discovery_projection_overlap,families_detected_median,families_detected_q025,families_detected_q975,families_five_genomes_median,families_five_genomes_q025,families_five_genomes_q975
+lineage-matched independent projection genomes,500,331,0,245.0,242.0,248.0,206.0,198.0,215.0

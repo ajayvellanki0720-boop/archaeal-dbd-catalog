@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0
+
+- Added 500 lineage-matched resamples from independent projection genomes, with explicit exclusion of discovery-panel accessions.
+- Added genome-level 70/30 motif holdout validation against dinucleotide-shuffled and GC-matched other-family controls, with descriptive resampling summaries that avoid treating overlapping splits as independent observations.
+- Added versioned replicate-level results, summaries, and supplementary figures for both analyses.
+- Extended the command-line interface, tests, documentation, and manuscript to report the new evidence and its limits.
+
 ## 0.1.0
 
 - Added a portable Python package and command-line interface.
@@ -9,4 +16,3 @@
 - Added a complete reproducibility-status inventory.
 - Preserved the original scripts under `legacy/code` without presenting them as portable.
 - Added the revised manuscript with bounded claims and corrected method descriptions.
-

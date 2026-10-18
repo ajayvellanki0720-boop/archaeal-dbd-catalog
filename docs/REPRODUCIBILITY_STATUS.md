@@ -8,6 +8,8 @@
 - Verification of motif, structure, and uncharacterized-family summary counts
 - Inspection of the deposited HMM, IQ-TREE, and Foldseek archives
 - The new 500-replicate within-panel resampling analysis
+- The new 500-replicate lineage-matched independent-genome projection analysis
+- The new 30-replicate genome-level motif holdout analysis
 - Automated regression tests for these quantities
 
 ## Present as released results but not independently regenerated here
@@ -45,5 +47,4 @@
 
 ## Interpretation
 
-This repository improves transparency and makes the available checks repeatable. It must not be described as a complete raw-to-figure reproduction until the missing inputs and corrected matrices are deposited and the external-tool workflow is rerun in a clean environment.
-
+This repository improves transparency and makes the available checks repeatable. The independent projection analysis strengthens evidence that the family HMMs transfer to new accessions, and the motif holdout analysis tests out-of-sample sequence prediction. Neither replaces de novo discovery on independent panels or biochemical validation. The release must not be described as a complete raw-to-figure reproduction until the missing inputs and corrected matrices are deposited and the external-tool workflow is rerun in a clean environment.
