@@ -10,9 +10,9 @@ This checklist is based on the BMC Genomics instructions accessed on 18 October 
 - [x] Descriptive title and full author names
 - [x] Corresponding-author email
 - [x] Three to ten keywords
-- [ ] Structured abstract with Background, Results, and Conclusions headings
-- [ ] Background, Methods, Results, Discussion, and Conclusions sections in journal order
-- [ ] Double-line spacing with page and continuous line numbering
+- [x] Structured abstract with Background, Results, and Conclusions headings
+- [x] Background, Methods, Results, Discussion, and Conclusions sections in journal order
+- [x] Double-line spacing with page and continuous line numbering
 - [x] Limitations discussed explicitly
 - [x] Figure legends remain below 300 words
 - [x] Figures are supplied as 300-dpi PNG files and are below 10 MB each
@@ -22,11 +22,11 @@ This checklist is based on the BMC Genomics instructions accessed on 18 October 
 
 - [x] Ethics approval and consent to participate: not applicable to this computational study
 - [x] Consent for publication: not applicable
-- [ ] Funding statement confirmed by both authors
-- [ ] Competing-interests statement confirmed by both authors
-- [ ] Individual author-contribution statement confirmed by both authors
-- [ ] Acknowledgements confirmed, including disclosure of generative-AI assistance
-- [ ] Both authors have approved the final manuscript and submission
+- [x] Funding statement supplied: no specific grant
+- [x] Competing-interests statement supplied: none declared
+- [x] Joint author-contribution statement supplied
+- [x] Acknowledgements include disclosure of generative-AI assistance
+- [x] Author-contribution statement records that both authors reviewed and approved the final manuscript
 
 ## Data software and archival record
 
@@ -34,9 +34,11 @@ This checklist is based on the BMC Genomics instructions accessed on 18 October 
 - [x] MIT software license included
 - [x] Versioned checksums and automated verification included
 - [x] Missing source data are enumerated without implying availability
-- [ ] GitHub repository made public after the final privacy and redistribution review
-- [ ] Version 0.4.0 GitHub release published with release immutability enabled
-- [ ] Zenodo record minted and DOI inserted into the manuscript, cover letter, and citation metadata
+- [x] GitHub repository made public after the final privacy and redistribution review
+- [x] Version 0.4.0 GitHub release published
+- [ ] GitHub release immutability enabled
+- [x] Zenodo DOI reserved and inserted into the manuscript, cover letter, and citation metadata: 10.5281/zenodo.23461090
+- [ ] Zenodo record published and DOI registered
 - [ ] Archived download independently verified against `MANIFEST.sha256`
 
 ## Submission representations

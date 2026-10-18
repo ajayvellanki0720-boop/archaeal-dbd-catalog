@@ -1,12 +1,11 @@
 # Immutable archive deposition
 
-1. Make the repository public only after checking that every released sequence-derived file may be redistributed under its source terms.
-2. Create a versioned GitHub release from the tested commit and attach the source archive plus `MANIFEST.sha256`.
-3. Connect the repository to Zenodo, archive the release, and reserve or mint the DOI.
-4. Replace the DOI placeholder in `CITATION.cff`, the manuscript Data and Code Availability statement, and the cover letter.
-5. Confirm that the Zenodo record lists both authors, the MIT software license, database-source caveats, and the manuscript title.
-6. Download the archive from Zenodo independently and verify `shasum -a 256 -c MANIFEST.sha256`.
+1. [x] Make the repository public only after checking that every released sequence-derived file may be redistributed under its source terms.
+2. [x] Create a versioned GitHub release from the tested commit and attach the source archive plus `MANIFEST.sha256`.
+3. [x] Connect the repository to Zenodo and reserve DOI `10.5281/zenodo.23461090` for version 0.4.0.
+4. [x] Insert the reserved DOI in `CITATION.cff`, the manuscript Data and Code Availability statement, and the cover letter.
+5. [x] Confirm that the Zenodo draft lists both authors, the MIT software license, database-source caveats, and the manuscript title.
+6. [ ] Publish the prepared Zenodo record so that the DOI is registered.
+7. [ ] Download the published archive independently and verify `shasum -a 256 -c MANIFEST.sha256`.
 
-Release metadata are pre-populated in `.zenodo.json`, `codemeta.json`, and `CITATION.cff`. Review both authors' names and identifiers before creating the public release.
-
-No DOI is included in the current package because a DOI cannot be truthfully assigned before deposit.
+Release metadata are pre-populated in `.zenodo.json`, `codemeta.json`, and `CITATION.cff`. The DOI is currently reserved; it becomes registered when the Zenodo draft is published.

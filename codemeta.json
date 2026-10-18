@@ -5,6 +5,7 @@
   "description": "Reproducibility package for a bounded catalog of noncanonical archaeal HTH and RHH DNA-binding-domain families.",
   "version": "0.4.0",
   "datePublished": "2026-10-18",
+  "identifier": "https://doi.org/10.5281/zenodo.23461090",
   "codeRepository": "https://github.com/ajayvellanki0720-boop/archaeal-dbd-catalog",
   "license": "https://spdx.org/licenses/MIT",
   "programmingLanguage": "Python",

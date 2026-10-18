@@ -95,6 +95,6 @@ The test suite checks catalog size, membership counts, projection accounting, mo
 
 ## Citation and license
 
-Citation metadata are provided in `CITATION.cff`; `MANIFEST.sha256` verifies file integrity. Code is released under the MIT License. Database records and third-party derived data remain subject to their original terms. No archive DOI is claimed until a release is actually deposited.
+Citation metadata are provided in `CITATION.cff`; the version 0.4.0 archive has the reserved DOI [10.5281/zenodo.23461090](https://doi.org/10.5281/zenodo.23461090). `MANIFEST.sha256` verifies file integrity. Code is released under the MIT License. Database records and third-party derived data remain subject to their original terms.
 
 Machine-readable archive metadata are also provided in `.zenodo.json` and `codemeta.json`. The journal-specific preparation status is tracked in [docs/BMC_GENOMICS_SUBMISSION_CHECKLIST.md](docs/BMC_GENOMICS_SUBMISSION_CHECKLIST.md).
