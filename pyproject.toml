@@ -21,7 +21,10 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-test = ["pytest==8.3.5"]
+test = [
+  "pytest==8.3.5",
+  "python-docx==1.2.0",
+]
 
 [project.scripts]
 archaeal-dbd = "archaeal_dbd.cli:main"
