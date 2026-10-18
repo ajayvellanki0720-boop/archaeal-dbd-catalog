@@ -2,6 +2,7 @@ from pathlib import Path
 
 import pandas as pd
 
+from archaeal_dbd import __version__
 from archaeal_dbd.audit import run_release_audit
 from archaeal_dbd.motif_holdout import auc, dinucleotide_shuffle
 from archaeal_dbd.panel import run_panel_sensitivity
@@ -11,6 +12,10 @@ from archaeal_dbd.thresholds import reciprocal_exclusion_grid
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def test_package_version_matches_release():
+    assert __version__ == "0.4.0"
 
 
 def test_release_invariants(tmp_path):
@@ -85,5 +90,41 @@ def test_versioned_genus_blocked_results_have_no_genus_overlap():
     summary = pd.read_csv(ROOT / "results/genus_blocked_motif_summary.csv")
     assert len(detail) == 12 * 30
     assert detail.genus_overlap.eq(0).all()
-    robust = summary.replicates_auc_above_0_5_vs_other_families.ge(26).sum()
-    assert robust == 7
+    assert (summary.fraction_auc_above_0_5_vs_other_families >= (26 / 30)).sum() == 7
+
+
+def test_taxonomic_clustered_prevalence_is_complete_and_bounded():
+    summary = pd.read_csv(ROOT / "results/taxonomic_clustered_prevalence.csv")
+    assert len(summary) == 250
+    assert summary.n_genomes.eq(3192).all()
+    assert summary.n_inferred_genera.eq(533).all()
+    bounded = summary.filter(regex="prevalence|q025|q975")
+    assert bounded.ge(0).all().all() and bounded.le(1).all().all()
+
+
+def test_family_separability_is_explicitly_subset_limited():
+    detail = pd.read_csv(ROOT / "results/family_separability_sequences.csv")
+    summary = pd.read_csv(ROOT / "results/family_separability_summary.csv")
+    assert len(detail) == 782
+    assert len(summary) == 10
+    assert summary.leave_one_out_accuracy.between(0, 1).all()
+
+
+def test_lineage_blocked_motif_has_no_lineage_overlap():
+    blocks = pd.read_csv(ROOT / "results/lineage_blocked_motif_blocks.csv")
+    summary = pd.read_csv(ROOT / "results/lineage_blocked_motif_summary.csv")
+    assert blocks.lineage_overlap.eq(0).all()
+    assert (blocks.test_sequences >= 5).all()
+    assert (blocks.train_sequences >= 20).all()
+    assert (summary.evaluable_lineages > 0).sum() == 10
+
+
+def test_extended_validation_registry_does_not_overclaim_completion():
+    registry = pd.read_csv(ROOT / "release/tables/extended_validation_registry.csv")
+    completed = set(registry.loc[registry.status == "complete", "item"])
+    assert completed == {
+        "Taxonomic clustered prevalence",
+        "Ten-family sequence separability",
+        "Genus-blocked motif validation",
+        "Major-lineage-blocked motif validation",
+    }

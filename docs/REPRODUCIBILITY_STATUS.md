@@ -14,6 +14,8 @@
 - Source, assembly-level, and reported-quality sensitivity on the 3,192 accession-resolved projection genomes
 - Claim-calibrated main figures and a workflow figure
 - A minimal worked example, locked dependencies, container recipe, and checksum manifest
+- Genus-clustered prevalence intervals, leave-one-major-lineage-out motif transfer, and ten-family sequence separability
+- Frozen protocols and input gates for independent discovery, HMM calibration, external annotation, a discovery multiverse, and blind reproduction
 - Automated regression tests for these quantities
 
 ## Present as released results but not independently regenerated here

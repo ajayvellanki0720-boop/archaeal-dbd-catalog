@@ -15,8 +15,11 @@
 - [x] Independent accessions are used for fixed-HMM projection validation.
 - [x] Motif tests hold out genomes and genera.
 - [x] Assembly/source-quality sensitivity is reported.
+- [x] Genome-level prevalence uncertainty is recalculated with genus-clustered resampling.
+- [x] Released-sequence family separability is evaluated with leave-one-sequence-out prediction.
+- [x] Motif enrichment is re-evaluated by holding out each eligible major lineage.
 - [ ] De novo family discovery has been repeated on independent panels (blocked by missing raw inputs).
-- [ ] Family assignment has been validated by clade-blocked sequence holdout for all 250 families (blocked by missing full sequences).
+- [ ] Family assignment has been validated by clade-blocked sequence holdout for all 250 families (the released sequences support a ten-family diagnostic only; full sequences remain missing).
 - [ ] Direct DNA binding and regulatory function have been experimentally tested.
 
 ## Reproducibility
@@ -25,6 +28,8 @@
 - [x] Random seeds and runnable commands are documented.
 - [x] A minimal worked example and automated tests are included.
 - [x] A checksum manifest is included.
+- [x] Continuous integration runs tests, smoke checks, reference auditing, the complete released analysis, and checksum verification.
+- [x] Unavailable extended analyses have preregistered protocols and a machine-readable status registry.
 - [x] The 3,192-versus-3,526 matrix scope is explicit.
 - [x] Missing source tables and database provenance fields are listed.
 - [ ] Repository visibility is public.

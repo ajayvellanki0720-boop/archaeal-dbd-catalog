@@ -1,0 +1,35 @@
+{
+  "stages": {
+    "raw_discovery": {
+      "ready": false,
+      "missing": [
+        "external/raw_discovery/candidate_pool.faa.gz",
+        "external/raw_discovery/candidate_hmm_hits.tsv.gz",
+        "external/raw_discovery/canonical_hmm_hits.tsv.gz",
+        "external/raw_discovery/genome_manifest.csv"
+      ]
+    },
+    "corrected_projection": {
+      "ready": false,
+      "missing": [
+        "external/corrected_projection/presence_absence_matrix_3526.csv.gz",
+        "external/corrected_projection/copynumber_matrix_3526.csv.gz"
+      ]
+    },
+    "independent_discovery": {
+      "ready": false,
+      "missing": [
+        "external/independent_discovery/genome_manifest.csv",
+        "external/independent_discovery/proteome_checksums.sha256"
+      ]
+    },
+    "external_annotation": {
+      "ready": false,
+      "missing": [
+        "external/annotation/query_sequences.faa",
+        "external/annotation/database_manifest.csv"
+      ]
+    }
+  },
+  "ready": false
+}

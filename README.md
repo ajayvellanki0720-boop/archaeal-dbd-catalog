@@ -1,6 +1,6 @@
 # Noncanonical archaeal DNA binding domain catalog
 
-This repository accompanies the manuscript **A Catalog of Noncanonical HTH and RHH DNA Binding Domain Families in Archaea**. It organizes the released family catalog, records its evidentiary limits, and provides portable checks, panel-sensitivity analyses, independent-genome projection validation, held-out motif validation, genome-quality sensitivity, and claim-calibrated publication figures.
+This repository accompanies the manuscript **A Catalog of Noncanonical HTH and RHH DNA Binding Domain Families in Archaea**. It organizes the released family catalog, records its evidentiary limits, and provides portable checks, sampling analyses, independent-genome projection, taxonomically blocked motif validation, genome-quality sensitivity, genus-clustered prevalence uncertainty, subset family-separability analysis, and claim-calibrated figures.
 
 ## Scope
 
@@ -18,6 +18,9 @@ The study is a bounded survey of proteins detected through Pfam clans CL0123 and
 - In genome-level 70/30 holdout tests, 10 of 12 motifs discriminated family upstreams from GC-matched upstreams of other families in at least 26 of 30 resamples.
 - Genomic-neighborhood results are functional hypotheses, not confirmed regulons.
 - Source/assembly-quality stratification detects 242–249 families in each stratum, while differing prevalence distributions underscore the need to interpret absences conservatively.
+- A genus-clustered bootstrap reports uncertainty without treating every genome as taxonomically independent.
+- Leave-one-major-lineage-out motif transfer is evaluable for 10 of 12 motif-bearing families; results are heterogeneous and more conservative than genome-level splits.
+- Alignment-free leave-one-sequence-out classification is reported for the ten families with released protein sequences only; it is not extrapolated to all 250 families.
 
 ## Quick start
 
@@ -49,7 +52,7 @@ examples/minimal/       Synthetic, fast worked example
 
 ## Reproducibility status
 
-`make all` reproduces the release audit, within-panel sensitivity analysis, independent-genome projection analysis, genome- and genus-blocked motif analyses, genome-quality sensitivity, and revised figures. It does not rerun raw domain discovery because the released archive lacks the complete 1,069-genome candidate pool and raw canonical and candidate HMM hit tables. The 3,526-genome corrected prevalence summaries are present, but the raw presence and copy-number matrices cover the earlier 3,192-genome pass.
+`make all` reproduces the release audit, within-panel sensitivity analysis, independent-genome projection analysis, genome-, genus-, and major-lineage-blocked motif analyses, genome-quality sensitivity, genus-clustered prevalence uncertainty, ten-family sequence separability, and revised figures. It does not rerun raw domain discovery because the released archive lacks the complete 1,069-genome candidate pool and raw canonical and candidate HMM hit tables. The 3,526-genome corrected prevalence summaries are present, but the raw presence and copy-number matrices cover the earlier 3,192-genome pass.
 
 See [docs/REPRODUCIBILITY_STATUS.md](docs/REPRODUCIBILITY_STATUS.md) for a precise inventory. No unavailable step is silently replaced with synthetic data.
 
@@ -68,6 +71,14 @@ For each of 12 tested families, genomes were split 70/30 for 30 seeded replicate
 ## Genus-blocked motif and genome-quality sensitivity
 
 The genus-blocked extension holds out complete genera and guarantees zero train/test genus overlap. Seven of 12 families discriminated held-out family upstreams from GC-matched other-family upstreams in at least 26 of 30 resamples, a more conservative result than genome-level splitting. The accession-resolved 3,192-genome projection is also stratified by isolate/MAG/SAG origin, assembly level, and reported completeness/contamination. These are descriptive sensitivity checks, not causal comparisons, because lineage, source, assembly level, and metadata availability are confounded.
+
+## Additional taxonomic robustness checks
+
+The prevalence analysis infers 533 genus labels from deposited organism names and resamples those labels as clusters. It reports both genome-weighted and genus-balanced estimates with bootstrap intervals. Because a versioned taxonomy and species tree are absent, this is a cluster-aware sensitivity analysis rather than a phylogenetic regression.
+
+The leave-one-major-lineage-out motif analysis trains on all other major groups and evaluates only blocks with at least five target sequences, twenty training sequences, and enough same-lineage other-family controls. Two families are not evaluable under those rules. The ten-family separability analysis uses only the 782 released protein sequences and is explicitly subset-limited.
+
+Protocols for the blocked discovery multiverse, HMM error calibration, independent time-split discovery, frozen external-database annotation, experimental work, and blind reproduction are indexed in `release/tables/extended_validation_registry.csv`. Run `python scripts/preflight_extended_validation.py --strict` after adding the required external inputs.
 
 ## Reciprocal exclusion rule
 

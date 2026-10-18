@@ -5,12 +5,15 @@ import json
 from pathlib import Path
 
 from .audit import run_release_audit
+from .family_separability import run_family_separability
 from .genus_blocked_motif import run_genus_blocked_motif
+from .lineage_blocked_motif import run_lineage_blocked_motif
 from .motif_holdout import run_motif_holdout
 from .panel import run_panel_sensitivity
 from .projection import run_independent_projection_resampling
 from .publication_figures import build_publication_figures, build_workflow_figure
 from .quality_sensitivity import run_quality_sensitivity
+from .taxonomic_prevalence import run_taxonomic_prevalence
 
 
 def main() -> None:
@@ -19,7 +22,8 @@ def main() -> None:
         "command",
         choices=(
             "audit", "panel-sensitivity", "independent-projection", "motif-holdout",
-            "genus-blocked-motif", "quality-sensitivity", "publication-figures", "all",
+            "genus-blocked-motif", "lineage-blocked-motif", "quality-sensitivity",
+            "taxonomic-prevalence", "family-separability", "publication-figures", "all",
         ),
     )
     parser.add_argument("--release-dir", type=Path, default=Path("release"))
@@ -79,6 +83,30 @@ def main() -> None:
         outputs = run_quality_sensitivity(
             args.release_dir / "data/presence_absence_matrix.csv",
             args.release_dir / "data/projection_genome_metadata.csv",
+            args.output_dir,
+        )
+        print(f"Wrote {outputs.summary}")
+        print(f"Wrote {outputs.figure}")
+    if args.command in {"taxonomic-prevalence", "all"}:
+        outputs = run_taxonomic_prevalence(
+            args.release_dir / "data/presence_absence_matrix.csv",
+            args.release_dir / "data/projection_genome_metadata.csv",
+            args.output_dir,
+        )
+        print(f"Wrote {outputs.summary}")
+        print(f"Wrote {outputs.figure}")
+    if args.command in {"family-separability", "all"}:
+        outputs = run_family_separability(
+            args.release_dir / "data/tree_family_seqs.json.gz",
+            args.output_dir,
+        )
+        print(f"Wrote {outputs.summary}")
+        print(f"Wrote {outputs.figure}")
+    if args.command in {"lineage-blocked-motif", "all"}:
+        outputs = run_lineage_blocked_motif(
+            args.release_dir / "data/family_upstreams_250bp.json.gz",
+            args.release_dir / "tables/motif_null_analysis.csv",
+            args.release_dir / "tables/discovery_panel.csv",
             args.output_dir,
         )
         print(f"Wrote {outputs.summary}")

@@ -37,6 +37,18 @@ The additional genus-blocked analysis repeats this logic while holding out entir
 
 The legacy accession-resolved projection was stratified by genome origin, assembly level, and reported completeness/contamination. Family prevalence and detection counts are reported for every stratum. The comparison is descriptive because these factors are confounded with lineage and with each other; it chiefly tests whether the catalog disappears when lower-quality assemblies are excluded.
 
+## Clustered prevalence uncertainty
+
+Organism names in the projection metadata define 533 inferred genus clusters. A 1,000-replicate cluster bootstrap resamples genera rather than individual genomes and reports genus-balanced and cluster-weighted uncertainty intervals for every family. This reduces genome-level pseudoreplication, but it is not a substitute for a versioned species tree or formal phylogenetic model.
+
+## Major-lineage motif transfer
+
+The strictest deposited motif analysis leaves one major lineage out at a time. A block is evaluable only with at least five target sequences, at least twenty training sequences, and enough GC-matched control sequences from other families in the same held-out lineage. Ten of twelve families have at least one evaluable block; nArcR-17 and nArcR-46 do not. The block-level table is primary because lineage heterogeneity is obscured by a single pooled statistic.
+
+## Sequence-family separability
+
+The 782 protein sequences released for ten phylogenetic examples are classified by leave-one-sequence-out dipeptide-composition centroids. Family accuracies range from 0.775 to 0.963. This supports separability in that subset but neither validates the other 240 family boundaries nor replaces alignment/profile-based benchmarking.
+
 This is predictive sequence validation, not a biochemical binding assay. The nArcR-6 model showed weak held-out discrimination from other families (median AUC 0.580) despite failing the earlier shuffled-family assignment null, so it remains a low-confidence motif.
 
 ## Required experimental validation

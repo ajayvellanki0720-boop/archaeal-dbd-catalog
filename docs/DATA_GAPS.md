@@ -20,3 +20,5 @@ Figures or summaries that depend on these files are treated as archived results,
 - Family-level phylogenetically blocked HMM validation requires the complete protein sequence set for all 250 families; the current release does not contain it.
 - A DOI requires an actual archival deposit. `CITATION.cff` and `ARCHIVE_DEPOSITION.md` prepare that action but do not claim a DOI.
 - Public release of the repository requires an explicit visibility decision by the owners.
+
+`scripts/preflight_extended_validation.py` converts these gaps into machine-readable readiness checks. Its strict mode is expected to fail until the external inputs listed in the validation protocols are deposited.

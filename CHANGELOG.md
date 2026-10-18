@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0 - 2026-10-18
+
+- Added genus-clustered prevalence estimates and bootstrap intervals.
+- Added leave-one-major-lineage-out motif validation with same-lineage controls.
+- Added leave-one-sequence-out family separability for the released ten-family subset.
+- Added preregistered protocols and machine-readable readiness gates for analyses requiring missing data, new database snapshots, independent analysts, or laboratory experiments.
+
 ## 0.3.0 - 2026-10-18
 
 - Added genus-blocked motif validation with zero train/test genus overlap.
