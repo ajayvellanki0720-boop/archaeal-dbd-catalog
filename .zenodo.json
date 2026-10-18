@@ -1,0 +1,33 @@
+{
+  "title": "A Catalog of Noncanonical HTH and RHH DNA Binding Domain Families in Archaea",
+  "description": "Versioned code, deposited data, checksums, validation outputs, figures, and manuscript materials for a bounded computational catalog of noncanonical archaeal HTH and RHH DNA-binding-domain families.",
+  "creators": [
+    {
+      "name": "Vellanki, Ajay",
+      "orcid": "0009-0008-7994-152X"
+    },
+    {
+      "name": "Dosapati, Shaurya"
+    }
+  ],
+  "upload_type": "software",
+  "publication_date": "2026-10-18",
+  "version": "0.4.0",
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "Archaea",
+    "comparative genomics",
+    "DNA-binding domain",
+    "helix-turn-helix",
+    "ribbon-helix-helix",
+    "protein family catalog"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ajayvellanki0720-boop/archaeal-dbd-catalog",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

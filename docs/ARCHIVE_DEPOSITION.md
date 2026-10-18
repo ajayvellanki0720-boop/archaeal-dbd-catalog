@@ -7,4 +7,6 @@
 5. Confirm that the Zenodo record lists both authors, the MIT software license, database-source caveats, and the manuscript title.
 6. Download the archive from Zenodo independently and verify `shasum -a 256 -c MANIFEST.sha256`.
 
+Release metadata are pre-populated in `.zenodo.json`, `codemeta.json`, and `CITATION.cff`. Review both authors' names and identifiers before creating the public release.
+
 No DOI is included in the current package because a DOI cannot be truthfully assigned before deposit.

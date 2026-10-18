@@ -96,3 +96,5 @@ The test suite checks catalog size, membership counts, projection accounting, mo
 ## Citation and license
 
 Citation metadata are provided in `CITATION.cff`; `MANIFEST.sha256` verifies file integrity. Code is released under the MIT License. Database records and third-party derived data remain subject to their original terms. No archive DOI is claimed until a release is actually deposited.
+
+Machine-readable archive metadata are also provided in `.zenodo.json` and `codemeta.json`. The journal-specific preparation status is tracked in [docs/BMC_GENOMICS_SUBMISSION_CHECKLIST.md](docs/BMC_GENOMICS_SUBMISSION_CHECKLIST.md).
