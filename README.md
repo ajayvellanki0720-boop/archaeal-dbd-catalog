@@ -1,6 +1,6 @@
 # Noncanonical archaeal DNA binding domain catalog
 
-This repository accompanies the manuscript **A Catalog of Noncanonical HTH and RHH DNA Binding Domain Families in Archaea**. It organizes the released family catalog, records its evidentiary limits, and provides portable checks, sampling analyses, independent-genome projection, taxonomically blocked motif validation, genome-quality sensitivity, genus-clustered prevalence uncertainty, subset family-separability analysis, and claim-calibrated figures.
+This repository accompanies the manuscript **A catalog of noncanonical HTH and RHH DNA-binding domain families in Archaea**. It organizes the released family catalog, records its evidentiary limits, and provides portable checks, sampling analyses, independent-genome projection, taxonomically blocked motif validation, genome-quality sensitivity, genus-clustered prevalence uncertainty, subset family-separability analysis, and claim-calibrated figures.
 
 ## Scope
 
@@ -97,4 +97,4 @@ The test suite checks catalog size, membership counts, projection accounting, mo
 
 Citation metadata are provided in `CITATION.cff`; the published version 0.4.0 archive is available at DOI [10.5281/zenodo.23461090](https://doi.org/10.5281/zenodo.23461090). `MANIFEST.sha256` verifies file integrity. Code is released under the MIT License. Database records and third-party derived data remain subject to their original terms.
 
-Machine-readable archive metadata are also provided in `.zenodo.json` and `codemeta.json`. The journal-specific preparation status is tracked in [docs/BMC_GENOMICS_SUBMISSION_CHECKLIST.md](docs/BMC_GENOMICS_SUBMISSION_CHECKLIST.md).
+Machine-readable archive metadata are also provided in `.zenodo.json` and `codemeta.json`. The current journal-specific preparation status is tracked in [docs/SCIENTIFIC_REPORTS_SUBMISSION_CHECKLIST.md](docs/SCIENTIFIC_REPORTS_SUBMISSION_CHECKLIST.md). The `manuscript/` directory contains the line-numbered Scientific Reports manuscript, its Supplementary Information, and the journal-specific cover letter.
