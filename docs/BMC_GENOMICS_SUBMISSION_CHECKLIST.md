@@ -1,5 +1,7 @@
 # BMC Genomics submission checklist
 
+**Superseded:** the active target is Scientific Reports; see `SCIENTIFIC_REPORTS_SUBMISSION_CHECKLIST.md`. This file is retained as an audit trail for the earlier journal-preparation pass.
+
 Target article type: Research article  
 Target section: Prokaryote microbial genomics or Comparative and evolutionary genomics
 

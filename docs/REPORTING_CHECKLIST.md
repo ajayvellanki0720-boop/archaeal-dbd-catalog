@@ -20,7 +20,7 @@
 - [x] Released-sequence family separability is evaluated with leave-one-sequence-out prediction.
 - [x] Motif enrichment is re-evaluated by holding out each eligible major lineage.
 - [ ] De novo family discovery has been repeated on independent panels (blocked by missing raw inputs).
-- [ ] Family assignment has been validated by clade-blocked sequence holdout for all 250 families (the released sequences support a ten-family diagnostic only; full sequences remain missing).
+- [ ] Family assignment has been validated by clade-blocked sequence holdout for all 250 families (all sequences are deposited, but catalog-wide taxonomic holdout and error calibration remain new analyses).
 - [ ] Direct DNA binding and regulatory function have been experimentally tested.
 
 ## Reproducibility
@@ -33,12 +33,12 @@
 - [x] Unavailable extended analyses have preregistered protocols and a machine-readable status registry.
 - [x] The 3,192-versus-3,526 matrix scope is explicit.
 - [x] Missing source tables and database provenance fields are listed.
-- [ ] Repository visibility is public.
-- [ ] An immutable archive DOI has been minted.
+- [x] Repository visibility is public.
+- [x] An immutable archive DOI has been minted; the stable concept DOI is 10.5281/zenodo.23461089.
 
 ## Submission metadata
 
 - [x] Author contributions, funding, competing interests, ethics, and data/code statements are drafted.
 - [x] Main and supplementary figure captions state evidentiary limits.
 - [x] A response-to-reviewers document and cover-letter draft are supplied.
-- [ ] Journal-specific formatting and checklist have been applied (target journal not yet selected).
+- [x] Scientific Reports formatting and a journal-specific checklist have been applied.

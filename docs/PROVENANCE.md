@@ -8,6 +8,10 @@ The portable Python analyses use Python 3.12 with NumPy 2.0.2, pandas 2.3.3, Sci
 
 The archived analysis identifies Pfam clans CL0123 and CL0057, CDD version 3.21, AlphaFold Database structures, NCBI RefSeq/GenBank assemblies, GTDB-based lineage groupings, and GEO series GSE293312. Exact Pfam/GTDB releases, database download dates, per-record AlphaFold versions, and the full genome-download manifest were not preserved in the supplied archive. They must not be inferred retrospectively. Their absence is recorded as a release limitation and the required fields are specified in `ADDITIONAL_DATA_SCHEMA.md`.
 
+## Catalog sequence recovery
+
+On 19 October 2026, `scripts/recover_catalog_sequences.py` used the assembly FTP paths recorded in the deposited genome metadata, repaired archived paths to their current versioned NCBI assembly locations, and extracted the accession named by every membership row. The assembly protein files yielded 13,232 of 13,237 sequences. Five WP accessions absent from the current assembly files were retrieved individually through NCBI Protein E-utilities. `release/tables/catalog_sequence_retrieval.csv` records each source URL, SHA-256 checksum, byte count, date, target count, recovered count, and fallback count. `catalog_sequence_fallback.csv` records the five fallback accessions and URLs. The resulting deterministic gzip archive contains one sequence for every membership row, and automated tests verify identifiers and lengths.
+
 ## Seeds
 
 - Original panel sampling and legacy permutation analyses: 42
@@ -25,6 +29,7 @@ python -m pip install -e '.[test]'
 make smoke
 make test
 make all
+python scripts/recover_catalog_sequences.py
 ```
 
 The first two commands provide a rapid installation and integrity check. `make all` regenerates every analysis supported by the deposited inputs. It does not reconstruct missing raw discovery or corrected 3,526-genome matrices.

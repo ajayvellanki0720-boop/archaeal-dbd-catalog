@@ -18,6 +18,7 @@
 - Genus-clustered prevalence intervals, leave-one-major-lineage-out motif transfer, and ten-family sequence separability
 - Frozen protocols and input gates for independent discovery, HMM calibration, external annotation, a discovery multiverse, and blind reproduction
 - Automated regression tests for these quantities
+- Recovery and integrity verification of all 13,237 catalog-member protein sequences, including accession-level provenance for five NCBI Protein fallbacks
 
 ## Present as released results but not independently regenerated here
 
@@ -54,4 +55,4 @@
 
 ## Interpretation
 
-This repository improves transparency and makes the available checks repeatable. The independent projection analysis strengthens evidence that the family HMMs transfer to new accessions, and the motif holdout analyses test out-of-sample sequence prediction. Neither replaces de novo discovery on independent panels or biochemical validation. The release must not be described as a complete raw-to-figure reproduction until the missing inputs and corrected matrices are deposited and the external-tool workflow is rerun in a clean environment. It must not claim a public archive DOI until one has actually been minted.
+This repository improves transparency and makes the available checks repeatable. The independent projection analysis strengthens evidence that the family HMMs transfer to new accessions, and the motif holdout analyses test out-of-sample sequence prediction. Neither replaces de novo discovery on independent panels or biochemical validation. The release must not be described as a complete raw-to-figure reproduction until the missing inputs and corrected matrices are deposited and the external-tool workflow is rerun in a clean environment. The public Zenodo concept DOI identifies the evolving archive; version-specific records identify immutable releases.

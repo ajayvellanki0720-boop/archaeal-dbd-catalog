@@ -23,4 +23,4 @@ Families without enough positives or negatives receive an `insufficient_data` re
 
 ## Status
 
-Not executed. Complete protein sequences, raw HMM hits, and the canonical negative collection are absent from the release. The supplied HMM archive and ten-family sequence subset are insufficient for catalog-wide calibration.
+Not executed. All 13,237 catalog-member protein sequences are now deposited, but the raw HMM hits, canonical negative collection, frozen taxonomic folds, and calibration outputs are absent. Sequence recovery removes one prerequisite; it does not retrospectively supply a valid catalog-wide error calibration.

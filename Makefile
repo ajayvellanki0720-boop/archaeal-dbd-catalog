@@ -1,10 +1,13 @@
-.PHONY: install verify panel-sensitivity catalog-accumulation independent-projection motif-holdout genus-blocked-motif lineage-blocked-motif quality-sensitivity taxonomic-prevalence family-separability publication-figures smoke all test
+.PHONY: install verify recover-catalog-sequences panel-sensitivity catalog-accumulation independent-projection motif-holdout genus-blocked-motif lineage-blocked-motif quality-sensitivity taxonomic-prevalence family-separability publication-figures smoke all test
 
 install:
 	python -m pip install -e '.[test]'
 
 verify:
 	python -m archaeal_dbd.cli audit
+
+recover-catalog-sequences:
+	python scripts/recover_catalog_sequences.py
 
 panel-sensitivity:
 	python -m archaeal_dbd.cli panel-sensitivity

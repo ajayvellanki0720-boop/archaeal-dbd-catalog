@@ -125,7 +125,7 @@ def run_family_separability(
     axis.boxplot(distributions, vert=False, tick_labels=order, showfliers=False)
     axis.axvline(0, linestyle="--", linewidth=1, color="#555555")
     axis.set_xlabel("Own-family minus nearest other-family centroid similarity")
-    axis.set_title("Sequence-family separability in the released 10-family subset")
+    axis.set_title("Sequence-family separability in the prespecified 10-family subset")
     figure_path = output_dir / "FigureS12_family_sequence_separability.png"
     fig.savefig(figure_path, dpi=300, bbox_inches="tight")
     plt.close(fig)

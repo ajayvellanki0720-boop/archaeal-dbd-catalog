@@ -92,7 +92,7 @@ def build_publication_figures(release_dir: Path, output_dir: Path) -> list[Path]
     image = ax.imshow(values, aspect="auto", cmap="YlOrRd", vmin=0, vmax=np.nanpercentile(values, 95))
     ax.set_xticks(range(len(matrix.columns)), matrix.columns, rotation=55, ha="right")
     ax.set_yticks(range(len(matrix.index)), matrix.index)
-    ax.set_title("Significant genomic-neighborhood associations")
+    ax.set_title("Exploratory genomic-neighborhood associations")
     ax.set_xlabel("Neighbor annotation category")
     ax.set_ylabel("Catalogued DBD family")
     fig.colorbar(image, ax=ax, label="log2 fold enrichment")

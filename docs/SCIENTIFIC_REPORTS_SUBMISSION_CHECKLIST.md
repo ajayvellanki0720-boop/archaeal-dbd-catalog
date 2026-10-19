@@ -37,7 +37,7 @@ Checked against the official Scientific Reports submission guidelines and editor
 ## End matter and files
 
 - [x] Data Availability and Code Availability are separate sections before References.
-- [x] The GitHub repository, MIT license, immutable version 0.4.0 archive, and Zenodo DOI are provided.
+- [x] The GitHub repository, MIT license, version 0.5.0 metadata, and stable Zenodo concept DOI are provided.
 - [x] The Zenodo software/data release is cited in the numbered reference list.
 - [x] References use numerical square-bracket citations and a Nature-style bibliography populated from DOI metadata.
 - [x] Acknowledgements/funding, author contributions, and competing interests are provided.
@@ -49,5 +49,5 @@ Checked against the official Scientific Reports submission guidelines and editor
 
 - The full 1,069-genome candidate pool and raw discovery HMM hit tables are unavailable, preventing a complete de novo rediscovery analysis across alternative panels.
 - Corrected 3,526-genome summary tables are available, but the accession-resolved raw matrices cover the earlier 3,192-genome projection.
-- Several dependence-corrected source tables and complete sequences for all 250 families were not preserved.
+- All 13,237 catalog-member sequences are deposited with source-level provenance; several historical dependence-corrected source tables were not preserved, so corresponding individual neighborhood claims are not made.
 - Computational evidence prioritizes candidates but cannot replace direct DNA-binding and in vivo regulatory experiments.

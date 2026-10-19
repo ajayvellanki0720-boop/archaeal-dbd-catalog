@@ -25,5 +25,7 @@
 | Table S11 | Ten-family sequence separability | `results/family_separability_*.csv` |
 | Table S12 | Leave-one-major-lineage-out motif blocks and summary | `results/lineage_blocked_motif_*.csv` |
 | Table S13 | Catalog accumulation summary and replicates | `results/catalog_accumulation_*.csv` |
+| Data S1 | All 13,237 catalog-member protein sequences | `release/data/novel_family_members.faa.gz` |
+| Data S2 | Assembly- and accession-level sequence retrieval provenance | `release/tables/catalog_sequence_retrieval.csv`; `release/tables/catalog_sequence_fallback.csv`; `release/tables/catalog_sequence_missing.csv` |
 
 “Initial neighborhood enrichments” are not a replacement for the missing dependence-corrected source table. Figure S2 is preserved as an archived final result; the missing file is disclosed in `DATA_GAPS.md`.

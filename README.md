@@ -21,7 +21,7 @@ The study is a bounded survey of proteins detected through Pfam clans CL0123 and
 - Source/assembly-quality stratification detects 242–249 families in each stratum, while differing prevalence distributions underscore the need to interpret absences conservatively.
 - A genus-clustered bootstrap reports uncertainty without treating every genome as taxonomically independent.
 - Leave-one-major-lineage-out motif transfer is evaluable for 10 of 12 motif-bearing families; results are heterogeneous and more conservative than genome-level splits.
-- Alignment-free leave-one-sequence-out classification is reported for the ten families with released protein sequences only; it is not extrapolated to all 250 families.
+- Alignment-free leave-one-sequence-out classification is reported for a prespecified ten-family subset; it is not extrapolated to all 250 families. The complete 13,237-member sequence set is now deposited for future catalog-wide analyses.
 
 ## Quick start
 
@@ -79,7 +79,15 @@ The genus-blocked extension holds out complete genera and guarantees zero train/
 
 The prevalence analysis infers 533 genus labels from deposited organism names and resamples those labels as clusters. It reports both genome-weighted and genus-balanced estimates with bootstrap intervals. Because a versioned taxonomy and species tree are absent, this is a cluster-aware sensitivity analysis rather than a phylogenetic regression.
 
-The leave-one-major-lineage-out motif analysis trains on all other major groups and evaluates only blocks with at least five target sequences, twenty training sequences, and enough same-lineage other-family controls. Two families are not evaluable under those rules. The ten-family separability analysis uses only the 782 released protein sequences and is explicitly subset-limited.
+The leave-one-major-lineage-out motif analysis trains on all other major groups and evaluates only blocks with at least five target sequences, twenty training sequences, and enough same-lineage other-family controls. Two families are not evaluable under those rules. The ten-family separability analysis uses a prespecified 782-sequence subset and is explicitly subset-limited; all 13,237 catalog-member sequences are separately deposited in `release/data/novel_family_members.faa.gz`.
+
+## Catalog sequence provenance
+
+All catalog-member sequences were recovered from versioned NCBI assembly protein FASTA files where available (13,232 members) and from NCBI Protein for five accessions absent from the current assembly files. `release/tables/catalog_sequence_retrieval.csv` records source URLs, SHA-256 checksums, byte counts, retrieval dates, and per-assembly counts; `catalog_sequence_fallback.csv` records the five accession-level fallbacks. The deterministic recovery command is:
+
+```bash
+python scripts/recover_catalog_sequences.py
+```
 
 Protocols for the blocked discovery multiverse, HMM error calibration, independent time-split discovery, frozen external-database annotation, experimental work, and blind reproduction are indexed in `release/tables/extended_validation_registry.csv`. Run `python scripts/preflight_extended_validation.py --strict` after adding the required external inputs.
 
@@ -98,6 +106,6 @@ The test suite checks catalog size, membership counts, projection accounting, mo
 
 ## Citation and license
 
-Citation metadata are provided in `CITATION.cff`; the published version 0.4.0 archive is available at DOI [10.5281/zenodo.23461090](https://doi.org/10.5281/zenodo.23461090). `MANIFEST.sha256` verifies file integrity. Code is released under the MIT License. Database records and third-party derived data remain subject to their original terms.
+Citation metadata are provided in `CITATION.cff`; the version-independent archive record is available at concept DOI [10.5281/zenodo.23461089](https://doi.org/10.5281/zenodo.23461089). Version 0.5.0 adds the complete catalog-member sequence set and its retrieval provenance. `MANIFEST.sha256` verifies file integrity. Code is released under the MIT License. Database records and third-party derived data remain subject to their original terms.
 
 Machine-readable archive metadata are also provided in `.zenodo.json` and `codemeta.json`. The current journal-specific preparation status is tracked in [docs/SCIENTIFIC_REPORTS_SUBMISSION_CHECKLIST.md](docs/SCIENTIFIC_REPORTS_SUBMISSION_CHECKLIST.md). The `manuscript/` directory contains the line-numbered Scientific Reports manuscript, its Supplementary Information, and the journal-specific cover letter.

@@ -17,8 +17,7 @@ Figures or summaries that depend on these files are treated as archived results,
 ## Analyses that require new work outside this repository
 
 - Biochemical DNA-binding measurements, perturbation experiments, and transcriptomic confirmation require laboratory experiments.
-- Family-level phylogenetically blocked HMM validation requires the complete protein sequence set for all 250 families; the current release does not contain it.
-- A DOI requires an actual archival deposit. `CITATION.cff` and `ARCHIVE_DEPOSITION.md` prepare that action but do not claim a DOI.
-- Public release of the repository requires an explicit visibility decision by the owners.
+- The complete protein sequence set is now deposited, but a family-level phylogenetically blocked HMM validation remains future work because it requires new train/test design, negative sets, profile fitting, and calibration rather than only sequence recovery.
+- The repository and version-independent Zenodo concept DOI are public. Version 0.5.0 must still be released and archived after the tested files and checksum manifest are finalized.
 
 `scripts/preflight_extended_validation.py` converts these gaps into machine-readable readiness checks. Its strict mode is expected to fail until the external inputs listed in the validation protocols are deposited.

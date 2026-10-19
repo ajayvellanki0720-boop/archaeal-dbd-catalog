@@ -1,10 +1,14 @@
 # Changelog
 
-## Unreleased
+## 0.5.0 - 2026-10-19
 
 - Added a 500-replicate lineage-stratified catalog-accumulation analysis across 10–100% of the discovery panel.
 - Distinguished observation of fixed released families from retention under the five-genome eligibility rule.
 - Integrated the analysis, limitations, supplementary figure, and reproducible outputs into the Scientific Reports submission package.
+- Recovered and deposited all 13,237 catalog-member protein sequences with accession-, URL-, checksum-, date-, and fallback-level provenance.
+- Added automated sequence-completeness and sequence-length verification.
+- Calibrated genomic-neighborhood claims to the deposited exploratory evidence because the dependence-corrected source table was not preserved.
+- Updated the line-numbered manuscript, Supplementary Information, cover letter, and point-by-point reviewer response for Scientific Reports.
 
 ## 0.4.0 - 2026-10-18
 

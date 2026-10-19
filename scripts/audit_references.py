@@ -11,7 +11,11 @@ DOI = re.compile(r"https://doi\.org/(10\.\d{4,9}/[-._;()/:A-Za-z0-9]+)")
 
 
 def main() -> None:
-    path = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("manuscript/Revised_archaeal_DBD_manuscript.docx")
+    path = (
+        Path(sys.argv[1])
+        if len(sys.argv) > 1
+        else Path("manuscript/Scientific_Reports_submission_manuscript.docx")
+    )
     document = Document(path)
     references = [p.text.strip() for p in document.paragraphs if re.match(r"^\d+\. ", p.text.strip())]
     dois = []
@@ -30,8 +34,8 @@ def main() -> None:
     duplicates = sorted({doi for doi in dois if dois.count(doi) > 1})
     if duplicates:
         problems.append(f"Duplicate DOI values: {duplicates}")
-    if len(references) != 40:
-        problems.append(f"Expected 40 references, found {len(references)}")
+    if len(references) != 41:
+        problems.append(f"Expected 41 references, found {len(references)}")
     if problems:
         raise SystemExit("\n".join(problems))
     print(f"Reference audit passed: {len(references)} sequential entries, each with one unique DOI URL.")

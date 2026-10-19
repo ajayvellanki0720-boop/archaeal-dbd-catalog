@@ -1,3 +1,4 @@
+import gzip
 from pathlib import Path
 
 import pandas as pd
@@ -16,7 +17,40 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_package_version_matches_release():
-    assert __version__ == "0.4.0"
+    assert __version__ == "0.5.0"
+
+
+def _read_fasta(path):
+    records = {}
+    with gzip.open(path, "rt", encoding="utf-8") as handle:
+        identifier = None
+        sequence = []
+        for line in handle:
+            line = line.strip()
+            if line.startswith(">"):
+                if identifier is not None:
+                    records[identifier] = "".join(sequence)
+                full_identifier = line[1:].split()[0]
+                identifier = full_identifier.partition("|")[2] or full_identifier
+                sequence = []
+            elif line:
+                sequence.append(line)
+        if identifier is not None:
+            records[identifier] = "".join(sequence)
+    return records
+
+
+def test_complete_catalog_sequence_archive_matches_membership():
+    membership = pd.read_csv(ROOT / "release/data/novel_family_membership.csv")
+    records = _read_fasta(ROOT / "release/data/novel_family_members.faa.gz")
+    expected = dict(zip(membership.member, membership.len))
+    assert len(records) == 13_237
+    assert set(records) == set(expected)
+    assert {name: len(sequence) for name, sequence in records.items()} == expected
+    assert pd.read_csv(ROOT / "release/tables/catalog_sequence_missing.csv").empty
+    fallback = pd.read_csv(ROOT / "release/tables/catalog_sequence_fallback.csv")
+    assert len(fallback) == 5
+    assert fallback.status.eq("recovered").all()
 
 
 def test_release_invariants(tmp_path):
@@ -144,4 +178,6 @@ def test_extended_validation_registry_does_not_overclaim_completion():
         "Ten-family sequence separability",
         "Genus-blocked motif validation",
         "Major-lineage-blocked motif validation",
+        "Catalog member sequence deposition",
+        "Immutable public archive",
     }
