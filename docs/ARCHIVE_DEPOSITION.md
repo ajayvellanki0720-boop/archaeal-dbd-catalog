@@ -5,7 +5,7 @@
 3. [x] Connect the repository to Zenodo and reserve DOI `10.5281/zenodo.23461090` for version 0.4.0.
 4. [x] Insert the reserved DOI in `CITATION.cff`, the manuscript Data and Code Availability statement, and the cover letter.
 5. [x] Confirm that the Zenodo draft lists both authors, the MIT software license, database-source caveats, and the manuscript title.
-6. [ ] Publish the prepared Zenodo record so that the DOI is registered.
-7. [ ] Download the published archive independently and verify `shasum -a 256 -c MANIFEST.sha256`.
+6. [x] Publish the prepared Zenodo record so that the DOI is registered.
+7. [x] Download the published archive independently and verify `shasum -a 256 -c MANIFEST.sha256`.
 
-Release metadata are pre-populated in `.zenodo.json`, `codemeta.json`, and `CITATION.cff`. The DOI is currently reserved; it becomes registered when the Zenodo draft is published.
+Release metadata are recorded in `.zenodo.json`, `codemeta.json`, and `CITATION.cff`. The published archive SHA-256 is `aa78941b644c240d966f84c97628c3b30e094156daa66f13816d9649bafc905a`.

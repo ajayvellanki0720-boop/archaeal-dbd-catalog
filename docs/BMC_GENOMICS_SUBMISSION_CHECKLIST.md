@@ -36,10 +36,10 @@ This checklist is based on the BMC Genomics instructions accessed on 18 October 
 - [x] Missing source data are enumerated without implying availability
 - [x] GitHub repository made public after the final privacy and redistribution review
 - [x] Version 0.4.0 GitHub release published
-- [ ] GitHub release immutability enabled
+- [x] GitHub release immutability enabled
 - [x] Zenodo DOI reserved and inserted into the manuscript, cover letter, and citation metadata: 10.5281/zenodo.23461090
-- [ ] Zenodo record published and DOI registered
-- [ ] Archived download independently verified against `MANIFEST.sha256`
+- [x] Zenodo record published and DOI registered
+- [x] Archived download independently verified against `MANIFEST.sha256`
 
 ## Submission representations
 
