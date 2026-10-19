@@ -4,6 +4,7 @@ import pandas as pd
 
 from archaeal_dbd import __version__
 from archaeal_dbd.audit import run_release_audit
+from archaeal_dbd.catalog_accumulation import run_catalog_accumulation
 from archaeal_dbd.motif_holdout import auc, dinucleotide_shuffle
 from archaeal_dbd.panel import run_panel_sensitivity
 from archaeal_dbd.projection import run_independent_projection_resampling
@@ -33,6 +34,21 @@ def test_panel_sensitivity_is_deterministic(tmp_path):
     )
     summary = pd.read_csv(out.summary).set_index("scheme")
     assert summary.loc["proportional_80", "families_detected_at_least_once_median"] == 250
+    assert out.figure.exists()
+
+
+def test_catalog_accumulation_reaches_full_released_catalog(tmp_path):
+    out = run_catalog_accumulation(
+        ROOT / "release/tables/discovery_panel.csv",
+        ROOT / "release/data/novel_family_membership.csv",
+        tmp_path,
+        replicates=5,
+        fractions=(0.2, 0.5, 1.0),
+    )
+    summary = pd.read_csv(out.summary).set_index("sampling_fraction")
+    assert summary.loc[1.0, "families_detected_at_least_once_median"] == 250
+    assert summary.loc[1.0, "families_retaining_five_genomes_median"] == 250
+    assert summary.loc[0.2, "families_detected_at_least_once_median"] <= 250
     assert out.figure.exists()
 
 
@@ -124,6 +140,7 @@ def test_extended_validation_registry_does_not_overclaim_completion():
     completed = set(registry.loc[registry.status == "complete", "item"])
     assert completed == {
         "Taxonomic clustered prevalence",
+        "Lineage-stratified catalog accumulation",
         "Ten-family sequence separability",
         "Genus-blocked motif validation",
         "Major-lineage-blocked motif validation",

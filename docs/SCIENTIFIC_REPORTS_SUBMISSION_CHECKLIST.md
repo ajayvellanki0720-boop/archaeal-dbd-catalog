@@ -23,6 +23,7 @@ Checked against the official Scientific Reports submission guidelines and editor
 - [x] The manuscript states that the captured fraction of all archaeal DNA-binding-domain space cannot be estimated from the available data.
 - [x] The 331-genome panel is defined as the result of an explicit lineage-aware rule rather than an independently selected target size.
 - [x] Alternative panel resampling and independent-accession projection analyses are reported with their inferential limits.
+- [x] A lineage-stratified accumulation curve separates observation of fixed families from retention under the five-genome rule.
 - [x] The former ambiguous “regulatory region” language is replaced with the aligned protein-domain interval and an exact reciprocal-exclusion rule.
 - [x] The inherited 5-bit tolerance is identified as operational and not prospectively calibrated.
 - [x] Complete family filtering criteria, including the nonregulatory exclusion patterns, are reported in Supplementary Methods.

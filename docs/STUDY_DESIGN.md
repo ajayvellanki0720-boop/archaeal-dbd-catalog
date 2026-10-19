@@ -25,6 +25,8 @@ The two caps are pragmatic controls for database imbalance. They are not claimed
 
 The present release adds an independent-genome projection test. Five hundred lineage-matched samples of 331 genomes were drawn from the legacy 3,192-genome projection matrix after excluding discovery-panel accessions. A median of 245 of 250 families were detected at least once (95 percent interval 242 to 248), and 206 occurred in at least five genomes (198 to 215). This tests whether the released family profiles transfer beyond the discovery accessions.
 
+A complementary lineage-stratified accumulation analysis samples 10 to 100 percent of every major group. At 50 percent, corresponding to a median of 167 genomes, a median of 249 fixed families was observed at least once (95 percent interval 245 to 250), whereas 156 retained representation in five genomes (146 to 165). At 80 percent, all 250 families were observed in every replicate, while a median of 213 met the five-genome rule (203 to 220). This separates observation of an already-defined family from sensitivity of the abundance-based eligibility rule.
+
 This analysis does not repeat candidate scanning, reciprocal canonical exclusion, clustering, or family definition. When the full 1,069-genome candidate pool becomes available, the complete discovery pipeline should still be repeated on multiple independent balanced panels. Families should be matched across runs by reciprocal profile searches and member overlap, with family recovery, splits, merges, boundary variation, and sensitivity to lineage caps and the minimum-genome threshold reported.
 
 ## Held-out motif validation

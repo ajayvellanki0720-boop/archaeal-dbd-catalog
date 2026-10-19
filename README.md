@@ -1,6 +1,6 @@
 # Noncanonical archaeal DNA binding domain catalog
 
-This repository accompanies the manuscript **A catalog of noncanonical HTH and RHH DNA-binding domain families in Archaea**. It organizes the released family catalog, records its evidentiary limits, and provides portable checks, sampling analyses, independent-genome projection, taxonomically blocked motif validation, genome-quality sensitivity, genus-clustered prevalence uncertainty, subset family-separability analysis, and claim-calibrated figures.
+This repository accompanies the manuscript **A catalog of noncanonical HTH and RHH DNA-binding domain families in Archaea**. It organizes the released family catalog, records its evidentiary limits, and provides portable checks, panel resampling and accumulation analyses, independent-genome projection, taxonomically blocked motif validation, genome-quality sensitivity, genus-clustered prevalence uncertainty, subset family-separability analysis, and claim-calibrated figures.
 
 ## Scope
 
@@ -12,6 +12,7 @@ The study is a bounded survey of proteins detected through Pfam clans CL0123 and
 - 16,535 were assigned to the reference set, 14,451 to another characterized family, and 7,167 were uncharacterized.
 - Clustering and filtering defined 250 candidate families containing 13,237 proteins.
 - Held-out family assignment recovered 97.3 percent of withheld members.
+- In lineage-stratified half-panel samples of 167 genomes, a median of 249 families was observed at least once, but only 156 retained representation in five or more genomes.
 - In 500 lineage-matched samples of 331 projection genomes with no discovery-panel accessions, a median of 245 families were detected at least once and 206 occurred in at least five genomes.
 - Of 79 Pfam-uncharacterized families, 56 were resolved by CDD and 14 more by structural comparison; nine remained unresolved by both resources tested.
 - Eleven of twelve tested upstream motifs passed all three sequence null models.
@@ -52,13 +53,15 @@ examples/minimal/       Synthetic, fast worked example
 
 ## Reproducibility status
 
-`make all` reproduces the release audit, within-panel sensitivity analysis, independent-genome projection analysis, genome-, genus-, and major-lineage-blocked motif analyses, genome-quality sensitivity, genus-clustered prevalence uncertainty, ten-family sequence separability, and revised figures. It does not rerun raw domain discovery because the released archive lacks the complete 1,069-genome candidate pool and raw canonical and candidate HMM hit tables. The 3,526-genome corrected prevalence summaries are present, but the raw presence and copy-number matrices cover the earlier 3,192-genome pass.
+`make all` reproduces the release audit, within-panel sensitivity and catalog-accumulation analyses, independent-genome projection analysis, genome-, genus-, and major-lineage-blocked motif analyses, genome-quality sensitivity, genus-clustered prevalence uncertainty, ten-family sequence separability, and revised figures. It does not rerun raw domain discovery because the released archive lacks the complete 1,069-genome candidate pool and raw canonical and candidate HMM hit tables. The 3,526-genome corrected prevalence summaries are present, but the raw presence and copy-number matrices cover the earlier 3,192-genome pass.
 
 See [docs/REPRODUCIBILITY_STATUS.md](docs/REPRODUCIBILITY_STATUS.md) for a precise inventory. No unavailable step is silently replaced with synthetic data.
 
 ## Within-panel sensitivity analysis
 
 The analysis performs 500 seeded replicates under three sampling schemes. All 250 families were detected in every stratified 80 percent replicate, while a median of 212 retained membership in at least five sampled genomes. This measures retention of already defined families. It is not equivalent to repeating discovery on independent panels.
+
+The lineage-stratified accumulation analysis samples 10 to 100 percent of each major group in 10 percent increments. A median of 249 families was observed in half-panel samples of 167 genomes (95 percent interval 245 to 250), while 156 met the five-genome rule (146 to 165). Observation of the fixed catalog approaches saturation before the abundance-based eligibility criterion. This analysis also does not repeat candidate scanning or clustering.
 
 ## Independent-genome projection validation
 

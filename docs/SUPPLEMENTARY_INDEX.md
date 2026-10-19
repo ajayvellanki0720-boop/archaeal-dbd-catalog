@@ -11,6 +11,7 @@
 | Figure S11 | Genus-clustered prevalence sensitivity | `results/FigureS11_taxonomic_clustered_prevalence.png` |
 | Figure S12 | Ten-family sequence separability | `results/FigureS12_family_sequence_separability.png` |
 | Figure S13 | Leave-one-major-lineage-out motif validation | `results/FigureS13_lineage_blocked_motif_validation.png` |
+| Figure S14 | Lineage-stratified accumulation of the fixed catalog | `results/FigureS14_catalog_accumulation.png` |
 | Table S1 | Panel composition and accession-level metadata | `release/tables/discovery_panel.csv` |
 | Table S2 | Candidate-family catalog | `release/tables/novel_family_catalog.csv` |
 | Table S3 | Genome accounting for the final 3,526-genome projection | `release/tables/genome_accounting.csv` |
@@ -23,5 +24,6 @@
 | Table S10 | Genus-clustered prevalence estimates and intervals | `results/taxonomic_clustered_prevalence.csv` |
 | Table S11 | Ten-family sequence separability | `results/family_separability_*.csv` |
 | Table S12 | Leave-one-major-lineage-out motif blocks and summary | `results/lineage_blocked_motif_*.csv` |
+| Table S13 | Catalog accumulation summary and replicates | `results/catalog_accumulation_*.csv` |
 
 “Initial neighborhood enrichments” are not a replacement for the missing dependence-corrected source table. Figure S2 is preserved as an archived final result; the missing file is disclosed in `DATA_GAPS.md`.

@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from .audit import run_release_audit
+from .catalog_accumulation import run_catalog_accumulation
 from .family_separability import run_family_separability
 from .genus_blocked_motif import run_genus_blocked_motif
 from .lineage_blocked_motif import run_lineage_blocked_motif
@@ -21,7 +22,7 @@ def main() -> None:
     parser.add_argument(
         "command",
         choices=(
-            "audit", "panel-sensitivity", "independent-projection", "motif-holdout",
+            "audit", "panel-sensitivity", "catalog-accumulation", "independent-projection", "motif-holdout",
             "genus-blocked-motif", "lineage-blocked-motif", "quality-sensitivity",
             "taxonomic-prevalence", "family-separability", "publication-figures", "all",
         ),
@@ -44,6 +45,16 @@ def main() -> None:
             args.output_dir,
             replicates=args.replicates,
             seed=args.seed,
+        )
+        print(f"Wrote {outputs.summary}")
+        print(f"Wrote {outputs.figure}")
+    if args.command in {"catalog-accumulation", "all"}:
+        outputs = run_catalog_accumulation(
+            args.release_dir / "tables/discovery_panel.csv",
+            args.release_dir / "data/novel_family_membership.csv",
+            args.output_dir,
+            replicates=args.replicates,
+            seed=args.seed + 60_000,
         )
         print(f"Wrote {outputs.summary}")
         print(f"Wrote {outputs.figure}")

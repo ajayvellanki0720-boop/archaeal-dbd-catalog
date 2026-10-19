@@ -1,4 +1,4 @@
-.PHONY: install verify panel-sensitivity independent-projection motif-holdout genus-blocked-motif lineage-blocked-motif quality-sensitivity taxonomic-prevalence family-separability publication-figures smoke all test
+.PHONY: install verify panel-sensitivity catalog-accumulation independent-projection motif-holdout genus-blocked-motif lineage-blocked-motif quality-sensitivity taxonomic-prevalence family-separability publication-figures smoke all test
 
 install:
 	python -m pip install -e '.[test]'
@@ -8,6 +8,9 @@ verify:
 
 panel-sensitivity:
 	python -m archaeal_dbd.cli panel-sensitivity
+
+catalog-accumulation:
+	python -m archaeal_dbd.cli catalog-accumulation
 
 independent-projection:
 	python -m archaeal_dbd.cli independent-projection

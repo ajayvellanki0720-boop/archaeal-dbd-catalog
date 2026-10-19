@@ -8,6 +8,7 @@
 - Verification of motif, structure, and uncharacterized-family summary counts
 - Inspection of the deposited HMM, IQ-TREE, and Foldseek archives
 - The new 500-replicate within-panel resampling analysis
+- The new lineage-stratified catalog accumulation analysis
 - The new 500-replicate lineage-matched independent-genome projection analysis
 - The new 30-replicate genome-level motif holdout analysis
 - A 30-replicate genus-blocked motif transfer analysis with zero train/test genus overlap

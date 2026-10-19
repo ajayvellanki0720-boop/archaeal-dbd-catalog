@@ -3,6 +3,7 @@ Raw-to-figure reproduction,blocked,no,docs/DATA_GAPS.md,"Deposit candidate pool;
 Independent time-split discovery,preregistered,no,docs/INDEPENDENT_DISCOVERY_PROTOCOL.md,"Freeze and download a post-cutoff nonoverlapping genome panel"
 Family-specific HMM error calibration,preregistered,no,docs/FDR_CALIBRATION_PROTOCOL.md,"Deposit complete proteins; canonical negatives; raw scores"
 Taxonomic clustered prevalence,complete,yes,results/taxonomic_clustered_prevalence.csv,"None within released-data scope"
+Lineage-stratified catalog accumulation,complete,yes,results/catalog_accumulation_summary.csv,"None within released-data scope; fixed-family analysis only"
 Discovery parameter multiverse,partial,no,docs/PARAMETER_MULTIVERSE_PROTOCOL.md,"Recover raw discovery intermediates and full sequences"
 Ten-family sequence separability,complete,yes,results/family_separability_summary.csv,"Expand sequence release for catalog-wide inference"
 Genus-blocked motif validation,complete,yes,results/genus_blocked_motif_summary.csv,"None within released-data scope"

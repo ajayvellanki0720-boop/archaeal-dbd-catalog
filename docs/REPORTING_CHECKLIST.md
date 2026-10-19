@@ -16,6 +16,7 @@
 - [x] Motif tests hold out genomes and genera.
 - [x] Assembly/source-quality sensitivity is reported.
 - [x] Genome-level prevalence uncertainty is recalculated with genus-clustered resampling.
+- [x] Fixed-catalog observation and the five-genome eligibility rule are evaluated across 10 to 100 percent of the lineage-stratified panel.
 - [x] Released-sequence family separability is evaluated with leave-one-sequence-out prediction.
 - [x] Motif enrichment is re-evaluated by holding out each eligible major lineage.
 - [ ] De novo family discovery has been repeated on independent panels (blocked by missing raw inputs).

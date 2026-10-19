@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Added a 500-replicate lineage-stratified catalog-accumulation analysis across 10–100% of the discovery panel.
+- Distinguished observation of fixed released families from retention under the five-genome eligibility rule.
+- Integrated the analysis, limitations, supplementary figure, and reproducible outputs into the Scientific Reports submission package.
+
 ## 0.4.0 - 2026-10-18
 
 - Added genus-clustered prevalence estimates and bootstrap intervals.
