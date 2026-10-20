@@ -17,6 +17,6 @@ jobs:
       - run: pytest -q
       - run: python -m archaeal_dbd.cli audit
       - run: python -m archaeal_dbd.smoke
-      - run: python scripts/audit_references.py manuscript/Revised_archaeal_DBD_manuscript.docx
+      - run: python scripts/audit_references.py manuscript/Scientific_Reports_submission_manuscript.docx
       - run: MPLCONFIGDIR=/tmp/matplotlib python -m archaeal_dbd.cli all --output-dir /tmp/archaeal-dbd-generated
       - run: sha256sum -c MANIFEST.sha256
