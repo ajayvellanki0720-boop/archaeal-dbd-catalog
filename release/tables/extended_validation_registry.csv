@@ -12,4 +12,4 @@ Major-lineage-blocked motif validation,complete,yes,results/lineage_blocked_moti
 External database reannotation,preregistered,no,docs/EXTERNAL_ANNOTATION_BENCHMARK.md,"Freeze databases and deposit queries plus raw outputs"
 Biochemical and genetic validation,planned,no,docs/EXPERIMENTAL_VALIDATION_PLAN.md,"Perform independent laboratory experiments"
 Blind external reproduction,protocol_ready,no,docs/BLIND_REPRODUCTION_PROTOCOL.md,"Independent analyst executes and signs report"
-Immutable public archive,complete,yes,docs/ARCHIVE_DEPOSITION.md,"Publish the prepared version 0.5.0 update after final checksum verification"
+Immutable public archive,complete,yes,docs/ARCHIVE_DEPOSITION.md,"None; version 0.5.0 was published and independently checksum-verified"

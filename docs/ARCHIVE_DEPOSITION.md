@@ -10,4 +10,4 @@
 
 Release metadata are recorded in `.zenodo.json`, `codemeta.json`, and `CITATION.cff`. The published archive SHA-256 is `aa78941b644c240d966f84c97628c3b30e094156daa66f13816d9649bafc905a`.
 
-Version 0.5.0 adds the complete 13,237-sequence catalog archive and provenance tables. Its version-specific Zenodo record and archive checksum should be recorded here after publication; until then, the concept DOI remains the correct stable citation target.
+Version 0.5.0 adds the complete 13,237-sequence catalog archive and provenance tables. Zenodo published the immutable version-specific record at `10.5281/zenodo.23496681`; the downloaded archive SHA-256 is `f3b42bea507cda8b89d52086bb7dddb8d8d69d4cf693ad8ac52df17fee34b502`. An independent post-publication check confirmed the ZIP container and every entry covered by its embedded `MANIFEST.sha256`. The concept DOI remains the correct citation target for the evolving release series.
