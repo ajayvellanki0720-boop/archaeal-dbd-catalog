@@ -1,0 +1,6 @@
+component,reported_count,identifiers_available,release_available,status,interpretation
+Target Pfam clans,2,"CL0123; CL0057",no,partially documented,"The clan identifiers are preserved, but the historical Pfam release was not."
+Reference families,19,no,no,unrecoverable historical metadata,"The original family names and model-to-family mapping were not preserved and must not be inferred."
+Reference profile models,20,no,no,unrecoverable historical metadata,"The count is preserved, but the exact accessions and profile files are unavailable."
+Candidate profile models,747,no,no,unrecoverable historical metadata,"The count is preserved, but the exact accessions and source profiles are unavailable."
+Released catalog family HMMs,250,yes,not applicable,deposited,"These are derived family profiles and do not reconstruct the historical Pfam search universe."

@@ -15,7 +15,7 @@
 - Source, assembly-level, and reported-quality sensitivity on the 3,192 accession-resolved projection genomes
 - Claim-calibrated main figures and a workflow figure
 - A minimal worked example, locked dependencies, container recipe, and checksum manifest
-- Genus-clustered prevalence intervals, leave-one-major-lineage-out motif transfer, and ten-family sequence separability
+- Genus-clustered prevalence intervals, leave-one-major-lineage-out motif transfer, ten-family sequence separability, and catalog-wide complete-genus separability
 - Frozen protocols and input gates for independent discovery, HMM calibration, external annotation, a discovery multiverse, and blind reproduction
 - Automated regression tests for these quantities
 - Recovery and integrity verification of all 13,237 catalog-member protein sequences, including accession-level provenance for five NCBI Protein fallbacks
@@ -48,10 +48,10 @@
 ## Legacy inconsistencies retained for transparency
 
 - The raw projection metadata and matrices contain 3,192 genomes, whereas final accounting contains 3,526.
-- The `got_hit` field in `genome_accounting.csv` was not updated for the 379 HMM-rescued genomes; the `fate` column contains the corrected classification.
+- Version 0.6.0 corrects the `got_hit` field for the 379 HMM-rescued genomes; earlier archives retain the inconsistency.
 - The original projection script does not implement the final rescue stage.
 - The original evolutionary script uses an adjacent-tip heuristic, while the archived final analysis uses IQ-TREE and Fitch parsimony.
-- The original synthesis text described the transcriptomic analysis as edgeR-style; the released analysis script instead performs simple tests on log-transformed CPM values.
+- The original synthesis text described the transcriptomic analysis as edgeR-style; because the source result table is unavailable and the script uses simple transformed-count tests, this claim was removed from the submission manuscript.
 
 ## Interpretation
 

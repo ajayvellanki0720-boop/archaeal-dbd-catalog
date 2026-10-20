@@ -1,4 +1,6 @@
-# Supplementary item index
+# Supplementary data index
+
+The submission PDF contains Supplementary Figures S1-S11 and summary Tables S1-S5. The journal upload should also include the following machine-readable data files.
 
 | Item | Description | Source |
 |---|---|---|
@@ -25,6 +27,10 @@
 | Table S11 | Ten-family sequence separability | `results/family_separability_*.csv` |
 | Table S12 | Leave-one-major-lineage-out motif blocks and summary | `results/lineage_blocked_motif_*.csv` |
 | Table S13 | Catalog accumulation summary and replicates | `results/catalog_accumulation_*.csv` |
+| Table S14 | Catalog-wide complete-genus sequence assignments | `results/catalog_wide_genus_blocked_sequences.csv` |
+| Table S15 | Catalog-wide complete-genus family summary | `results/catalog_wide_genus_blocked_families.csv`; `results/catalog_wide_genus_blocked_summary.csv` |
+| Table S16 | Search-universe provenance | `release/tables/search_universe_provenance.csv` |
+| Table S17 | Taxonomic-group mapping | `release/tables/taxonomic_group_definitions.csv` |
 | Data S1 | All 13,237 catalog-member protein sequences | `release/data/novel_family_members.faa.gz` |
 | Data S2 | Assembly- and accession-level sequence retrieval provenance | `release/tables/catalog_sequence_retrieval.csv`; `release/tables/catalog_sequence_fallback.csv`; `release/tables/catalog_sequence_missing.csv` |
 

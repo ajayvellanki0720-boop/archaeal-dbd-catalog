@@ -1,17 +1,18 @@
-# Noncanonical archaeal DNA binding domain catalog
+# Archaeal HTH and RHH DNA binding domain catalog
 
-This repository accompanies the manuscript **A catalog of noncanonical HTH and RHH DNA-binding domain families in Archaea**. It organizes the released family catalog, records its evidentiary limits, and provides portable checks, panel resampling and accumulation analyses, independent-genome projection, taxonomically blocked motif validation, genome-quality sensitivity, genus-clustered prevalence uncertainty, subset family-separability analysis, and claim-calibrated figures.
+This repository accompanies the manuscript **A catalog of archaeal HTH and RHH DNA-binding-domain families outside a nineteen-family reference set**. It organizes the released family catalog, records its evidentiary limits, and provides portable checks, panel resampling and accumulation analyses, independent-genome projection, taxonomically blocked motif validation, genome-quality sensitivity, genus-clustered prevalence uncertainty, catalog-wide complete-genus family-separability analysis, and claim-calibrated figures.
 
 ## Scope
 
-The study is a bounded survey of proteins detected through Pfam clans CL0123 and CL0057 after removing a nineteen-family reference set. It is **not** a comprehensive census of all archaeal DNA-binding proteins, and a family assignment is **not** proof that a protein is a transcription factor.
+The study is a bounded survey of proteins detected through Pfam clans CL0123 and CL0057 after removal of an historical nineteen-family reference assignment. The exact Pfam release and the mapping of nineteen families to twenty reference models were not preserved. The catalog is **not** a comprehensive census of all archaeal DNA-binding proteins, and a family assignment is **not** proof that a protein is a transcription factor.
 
 ## Key findings represented in this release
 
 - 38,153 proteins in the 331-genome panel carried a targeted clan domain.
 - 16,535 were assigned to the reference set, 14,451 to another characterized family, and 7,167 were uncharacterized.
 - Clustering and filtering defined 250 candidate families containing 13,237 proteins.
-- Held-out family assignment recovered 97.3 percent of withheld members.
+- Random sequence holdout recovered 97.3 percent of withheld members, but this split permits taxonomic leakage.
+- Complete-genus holdout evaluated 13,166 sequences from 245 families; median family accuracy was 82.6 percent and 197 families had a positive median separation margin.
 - In lineage-stratified half-panel samples of 167 genomes, a median of 249 families was observed at least once, but only 156 retained representation in five or more genomes.
 - In 500 lineage-matched samples of 331 projection genomes with no discovery-panel accessions, a median of 245 families were detected at least once and 206 occurred in at least five genomes.
 - Of 79 Pfam-uncharacterized families, 56 were resolved by CDD and 14 more by structural comparison; nine remained unresolved by both resources tested.
@@ -21,7 +22,7 @@ The study is a bounded survey of proteins detected through Pfam clans CL0123 and
 - Source/assembly-quality stratification detects 242–249 families in each stratum, while differing prevalence distributions underscore the need to interpret absences conservatively.
 - A genus-clustered bootstrap reports uncertainty without treating every genome as taxonomically independent.
 - Leave-one-major-lineage-out motif transfer is evaluable for 10 of 12 motif-bearing families; results are heterogeneous and more conservative than genome-level splits.
-- Alignment-free leave-one-sequence-out classification is reported for a prespecified ten-family subset; it is not extrapolated to all 250 families. The complete 13,237-member sequence set is now deposited for future catalog-wide analyses.
+- Alignment-free complete-genus classification is reported across all deposited sequences; five families lacked sufficient genus-separated training data. This analysis is not an HMM calibration.
 
 ## Quick start
 
@@ -53,7 +54,7 @@ examples/minimal/       Synthetic, fast worked example
 
 ## Reproducibility status
 
-`make all` reproduces the release audit, within-panel sensitivity and catalog-accumulation analyses, independent-genome projection analysis, genome-, genus-, and major-lineage-blocked motif analyses, genome-quality sensitivity, genus-clustered prevalence uncertainty, ten-family sequence separability, and revised figures. It does not rerun raw domain discovery because the released archive lacks the complete 1,069-genome candidate pool and raw canonical and candidate HMM hit tables. The 3,526-genome corrected prevalence summaries are present, but the raw presence and copy-number matrices cover the earlier 3,192-genome pass.
+`make all` reproduces the release audit, within-panel sensitivity and catalog-accumulation analyses, independent-genome projection analysis, genome-, genus-, and major-lineage-blocked motif analyses, genome-quality sensitivity, genus-clustered prevalence uncertainty, ten-family sequence separability, catalog-wide complete-genus separability, and revised figures. It does not rerun raw domain discovery because the release lacks the complete 1,069-genome candidate pool, the original profile inventory, and raw reference and candidate HMM hits. The 3,526-genome summaries are archived aggregates; accession-resolved family matrices cover the reproducible 3,192-genome pass.
 
 See [docs/REPRODUCIBILITY_STATUS.md](docs/REPRODUCIBILITY_STATUS.md) for a precise inventory. No unavailable step is silently replaced with synthetic data.
 
@@ -79,7 +80,7 @@ The genus-blocked extension holds out complete genera and guarantees zero train/
 
 The prevalence analysis infers 533 genus labels from deposited organism names and resamples those labels as clusters. It reports both genome-weighted and genus-balanced estimates with bootstrap intervals. Because a versioned taxonomy and species tree are absent, this is a cluster-aware sensitivity analysis rather than a phylogenetic regression.
 
-The leave-one-major-lineage-out motif analysis trains on all other major groups and evaluates only blocks with at least five target sequences, twenty training sequences, and enough same-lineage other-family controls. Two families are not evaluable under those rules. The ten-family separability analysis uses a prespecified 782-sequence subset and is explicitly subset-limited; all 13,237 catalog-member sequences are separately deposited in `release/data/novel_family_members.faa.gz`.
+The leave-one-major-lineage-out motif analysis trains on all other major groups and evaluates only blocks with at least five target sequences, twenty training sequences, and enough same-lineage other-family controls. Two families are not evaluable under those rules. The catalog-wide complete-genus analysis removes all proteins from a test sequence's inferred genus before fitting dipeptide-composition centroids. It evaluates 13,166 sequences from 245 families and reports the five unevaluable families rather than assigning them by a leaky split.
 
 ## Catalog sequence provenance
 
@@ -106,6 +107,6 @@ The test suite checks catalog size, membership counts, projection accounting, mo
 
 ## Citation and license
 
-Citation metadata are provided in `CITATION.cff`; the version-independent archive record is available at concept DOI [10.5281/zenodo.23461089](https://doi.org/10.5281/zenodo.23461089), and the immutable version 0.5.0 record is [10.5281/zenodo.23496681](https://doi.org/10.5281/zenodo.23496681). Version 0.5.0 adds the complete catalog-member sequence set and its retrieval provenance. `MANIFEST.sha256` verifies file integrity. Code is released under the MIT License. Database records and third-party derived data remain subject to their original terms.
+Citation metadata are provided in `CITATION.cff`; the version-independent archive record is available at concept DOI [10.5281/zenodo.23461089](https://doi.org/10.5281/zenodo.23461089), and the immutable version 0.5.0 record is [10.5281/zenodo.23496681](https://doi.org/10.5281/zenodo.23496681). Version 0.6.0 adds catalog-wide complete-genus validation, corrects genome-accounting flags, standardizes taxonomic labels in the manuscript, and adds explicit search-universe provenance. `MANIFEST.sha256` verifies file integrity. Code is released under the MIT License. Database records and third-party derived data remain subject to their original terms.
 
 Machine-readable archive metadata are also provided in `.zenodo.json` and `codemeta.json`. The current journal-specific preparation status is tracked in [docs/SCIENTIFIC_REPORTS_SUBMISSION_CHECKLIST.md](docs/SCIENTIFIC_REPORTS_SUBMISSION_CHECKLIST.md). The `manuscript/` directory contains the line-numbered Scientific Reports manuscript, its Supplementary Information, and the journal-specific cover letter.

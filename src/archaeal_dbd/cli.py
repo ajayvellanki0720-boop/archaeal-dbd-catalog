@@ -6,6 +6,7 @@ from pathlib import Path
 
 from .audit import run_release_audit
 from .catalog_accumulation import run_catalog_accumulation
+from .catalog_wide_separability import run_catalog_wide_separability
 from .family_separability import run_family_separability
 from .genus_blocked_motif import run_genus_blocked_motif
 from .lineage_blocked_motif import run_lineage_blocked_motif
@@ -24,7 +25,8 @@ def main() -> None:
         choices=(
             "audit", "panel-sensitivity", "catalog-accumulation", "independent-projection", "motif-holdout",
             "genus-blocked-motif", "lineage-blocked-motif", "quality-sensitivity",
-            "taxonomic-prevalence", "family-separability", "publication-figures", "all",
+            "taxonomic-prevalence", "family-separability", "catalog-wide-separability",
+            "publication-figures", "all",
         ),
     )
     parser.add_argument("--release-dir", type=Path, default=Path("release"))
@@ -109,6 +111,15 @@ def main() -> None:
     if args.command in {"family-separability", "all"}:
         outputs = run_family_separability(
             args.release_dir / "data/tree_family_seqs.json.gz",
+            args.output_dir,
+        )
+        print(f"Wrote {outputs.summary}")
+        print(f"Wrote {outputs.figure}")
+    if args.command in {"catalog-wide-separability", "all"}:
+        outputs = run_catalog_wide_separability(
+            args.release_dir / "data/novel_family_members.faa.gz",
+            args.release_dir / "data/novel_family_membership.csv",
+            args.release_dir / "tables/discovery_panel.csv",
             args.output_dir,
         )
         print(f"Wrote {outputs.summary}")

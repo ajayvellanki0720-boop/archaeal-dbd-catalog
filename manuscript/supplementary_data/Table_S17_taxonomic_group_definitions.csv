@@ -1,0 +1,8 @@
+display_label,discovery_panel_label,genome_accounting_label,discovery_genomes,accounting_genomes,definition_limit
+Euryarchaeota,Euryarchaeota,Euryarchaeota,140,2378,"Historical major-group assignment; exact GTDB release unavailable"
+Crenarchaeota within TACK,Crenarchaeota (TACK),Crenarchaeota_TACK,70,270,"Mutually exclusive historical major-group assignment"
+Thaumarchaeota within TACK,Thaumarchaeota (TACK),Thaumarchaeota_TACK,51,283,"Mutually exclusive historical major-group assignment"
+Other deep TACK,Other deep TACK,Other_deep_TACK,15,302,"Excludes Crenarchaeota, Thaumarchaeota and Korarchaeota categories"
+Korarchaeota within TACK,Korarchaeota (TACK),Korarchaeota_TACK,3,7,"Mutually exclusive historical major-group assignment"
+DPANN,DPANN,DPANN,33,228,"Historical major-group assignment; exact GTDB release unavailable"
+Asgardarchaeota,Asgardarchaeota,Asgardarchaeota,19,58,"Historical major-group assignment; exact GTDB release unavailable"

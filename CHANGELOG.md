@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.6.0 - 2026-10-20
+
+- Added catalog-wide complete-genus separability analysis for all 13,237 deposited sequences; 13,166 sequences from 245 families were evaluable.
+- Reframed the original random sequence holdout as an optimistic check and reported taxonomically blocked macro-, micro-, family-, and sequence-level results.
+- Corrected the `got_hit` field for 379 HMM-rescued genomes to agree with final accounting fate.
+- Added explicit search-universe provenance and mutually exclusive taxonomic-group mapping tables.
+- Restricted accession-level prevalence inference to the deposited 3,192-genome matrices and retained the 3,526-genome values as archived aggregate results.
+- Added quantitative phylogenetic Results, clarified structural denominators, and removed the unsupported transcriptomic narrative.
+- Replaced confirmatory terminology with secondary validation and updated the line-numbered Scientific Reports package.
+
 ## 0.5.0 - 2026-10-19
 
 - Added a 500-replicate lineage-stratified catalog-accumulation analysis across 10–100% of the discovery panel.

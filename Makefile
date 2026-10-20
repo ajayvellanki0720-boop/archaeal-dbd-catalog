@@ -1,4 +1,4 @@
-.PHONY: install verify recover-catalog-sequences panel-sensitivity catalog-accumulation independent-projection motif-holdout genus-blocked-motif lineage-blocked-motif quality-sensitivity taxonomic-prevalence family-separability publication-figures smoke all test
+.PHONY: install verify recover-catalog-sequences panel-sensitivity catalog-accumulation independent-projection motif-holdout genus-blocked-motif lineage-blocked-motif quality-sensitivity taxonomic-prevalence family-separability catalog-wide-separability publication-figures smoke all test
 
 install:
 	python -m pip install -e '.[test]'
@@ -32,6 +32,9 @@ taxonomic-prevalence:
 
 family-separability:
 	python -m archaeal_dbd.cli family-separability
+
+catalog-wide-separability:
+	python -m archaeal_dbd.cli catalog-wide-separability
 
 lineage-blocked-motif:
 	python -m archaeal_dbd.cli lineage-blocked-motif

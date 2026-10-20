@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_package_version_matches_release():
-    assert __version__ == "0.5.0"
+    assert __version__ == "0.6.0"
 
 
 def _read_fasta(path):
@@ -56,6 +56,12 @@ def test_complete_catalog_sequence_archive_matches_membership():
 def test_release_invariants(tmp_path):
     report = run_release_audit(ROOT / "release", tmp_path / "audit.json")
     assert report["all_numeric_invariants_pass"]
+
+
+def test_final_genome_accounting_hit_flag_matches_fate():
+    accounting = pd.read_csv(ROOT / "release/tables/genome_accounting.csv")
+    expected = accounting.fate.isin({"analyzed_hit", "analyzed_hit_diamond"})
+    assert accounting.got_hit.eq(expected).all()
 
 
 def test_panel_sensitivity_is_deterministic(tmp_path):
@@ -160,6 +166,19 @@ def test_family_separability_is_explicitly_subset_limited():
     assert summary.leave_one_out_accuracy.between(0, 1).all()
 
 
+def test_catalog_wide_genus_blocked_validation_is_complete_and_leakage_free():
+    detail = pd.read_csv(ROOT / "results/catalog_wide_genus_blocked_sequences.csv")
+    families = pd.read_csv(ROOT / "results/catalog_wide_genus_blocked_families.csv")
+    summary = pd.read_csv(ROOT / "results/catalog_wide_genus_blocked_summary.csv").iloc[0]
+    panel = pd.read_csv(ROOT / "release/tables/discovery_panel.csv")
+    genus_by_genome = panel.set_index("accession")["genus"].to_dict()
+    assert len(families) == 250
+    assert summary.catalog_families == 250
+    assert detail.correct.isin([True, False]).all()
+    assert (detail.own_training_sequences >= 2).all()
+    assert all(genus_by_genome[genome] == genus for genome, genus in zip(detail.genome, detail.held_out_genus))
+
+
 def test_lineage_blocked_motif_has_no_lineage_overlap():
     blocks = pd.read_csv(ROOT / "results/lineage_blocked_motif_blocks.csv")
     summary = pd.read_csv(ROOT / "results/lineage_blocked_motif_summary.csv")
@@ -176,6 +195,7 @@ def test_extended_validation_registry_does_not_overclaim_completion():
         "Taxonomic clustered prevalence",
         "Lineage-stratified catalog accumulation",
         "Ten-family sequence separability",
+        "Catalog-wide complete-genus separability",
         "Genus-blocked motif validation",
         "Major-lineage-blocked motif validation",
         "Catalog member sequence deposition",

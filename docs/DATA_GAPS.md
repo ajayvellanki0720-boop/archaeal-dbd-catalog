@@ -4,7 +4,7 @@ This document prevents unavailable evidence from being mistaken for an omission 
 
 ## Blocking raw inputs
 
-The complete 1,069-genome candidate pool and raw candidate/canonical HMM hit tables were not present in the supplied archive. Consequently, the study cannot yet repeat domain discovery, reciprocal exclusion, and de novo clustering on alternative panels. The independent projection analysis validates transfer of fixed family HMMs, not rediscovery.
+The complete 1,069-genome candidate pool, original nineteen-family/twenty-profile reference inventory, 747 candidate-profile accessions, exact Pfam release, and raw candidate/reference HMM hit tables were not present in the supplied archive. Consequently, the study cannot repeat domain discovery, reciprocal exclusion, or de novo clustering on alternative panels. The independent projection analysis validates transfer of fixed family HMMs, not rediscovery.
 
 The corrected 3,526-genome presence/absence and copy-number matrices were also absent. The deposited matrices contain 3,192 genomes and are explicitly labeled legacy projection matrices. Corrected aggregate prevalence and genome-accounting tables remain available. No missing 334 genome columns have been invented.
 
@@ -17,7 +17,7 @@ Figures or summaries that depend on these files are treated as archived results,
 ## Analyses that require new work outside this repository
 
 - Biochemical DNA-binding measurements, perturbation experiments, and transcriptomic confirmation require laboratory experiments.
-- The complete protein sequence set is now deposited, but a family-level phylogenetically blocked HMM validation remains future work because it requires new train/test design, negative sets, profile fitting, and calibration rather than only sequence recovery.
-- The repository and version-independent Zenodo concept DOI are public. Version 0.5.0 must still be released and archived after the tested files and checksum manifest are finalized.
+- Complete-genus composition validation is now available for all deposited sequences. A taxonomically blocked HMM calibration with explicit negatives and score thresholds remains future work.
+- The repository and version-independent Zenodo concept DOI are public. Version 0.5.0 is archived at DOI 10.5281/zenodo.23496681; later corrections are versioned separately.
 
 `scripts/preflight_extended_validation.py` converts these gaps into machine-readable readiness checks. Its strict mode is expected to fail until the external inputs listed in the validation protocols are deposited.

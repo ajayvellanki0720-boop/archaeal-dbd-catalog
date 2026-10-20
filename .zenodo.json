@@ -1,6 +1,6 @@
 {
-  "title": "A Catalog of Noncanonical HTH and RHH DNA Binding Domain Families in Archaea",
-  "description": "Versioned code, deposited data, checksums, validation outputs, figures, and manuscript materials for a bounded computational catalog of noncanonical archaeal HTH and RHH DNA-binding-domain families.",
+  "title": "A Catalog of Archaeal HTH and RHH DNA Binding Domain Families Outside a Nineteen Family Reference Set",
+  "description": "Versioned code, deposited data, checksums, validation outputs, figures, and manuscript materials for a bounded historical catalog of archaeal HTH and RHH DNA-binding-domain families.",
   "creators": [
     {
       "name": "Vellanki, Ajay",
@@ -11,8 +11,8 @@
     }
   ],
   "upload_type": "software",
-  "publication_date": "2026-10-19",
-  "version": "0.5.0",
+  "publication_date": "2026-10-20",
+  "version": "0.6.0",
   "access_right": "open",
   "license": "MIT",
   "keywords": [
