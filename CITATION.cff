@@ -8,7 +8,7 @@ authors:
     orcid: https://orcid.org/0009-0008-7994-152X
   - family-names: Dosapati
     given-names: Shaurya
-version: 0.6.0
+version: 0.7.0
 date-released: 2026-10-20
 doi: 10.5281/zenodo.23461089
 license: MIT

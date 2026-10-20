@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_package_version_matches_release():
-    assert __version__ == "0.6.0"
+    assert __version__ == "0.7.0"
 
 
 def _read_fasta(path):
@@ -176,6 +176,9 @@ def test_catalog_wide_genus_blocked_validation_is_complete_and_leakage_free():
     assert summary.catalog_families == 250
     assert detail.correct.isin([True, False]).all()
     assert (detail.own_training_sequences >= 2).all()
+    assert detail.uniform_chance_probability.between(0, 1).all()
+    assert summary.micro_accuracy > summary.majority_training_family_baseline_accuracy
+    assert summary.micro_accuracy > summary.mean_uniform_chance_accuracy
     assert all(genus_by_genome[genome] == genus for genome, genus in zip(detail.genome, detail.held_out_genus))
 
 

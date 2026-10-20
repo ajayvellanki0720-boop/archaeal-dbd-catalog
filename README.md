@@ -12,7 +12,7 @@ The study is a bounded survey of proteins detected through Pfam clans CL0123 and
 - 16,535 were assigned to the reference set, 14,451 to another characterized family, and 7,167 were uncharacterized.
 - Clustering and filtering defined 250 candidate families containing 13,237 proteins.
 - Random sequence holdout recovered 97.3 percent of withheld members, but this split permits taxonomic leakage.
-- Complete-genus holdout evaluated 13,166 sequences from 245 families; median family accuracy was 82.6 percent and 197 families had a positive median separation margin.
+- Complete-genus holdout evaluated 13,166 sequences from 245 families. Micro-accuracy was 76.7 percent versus 12.2 percent for the majority-training-family baseline; median family accuracy was 82.6 percent, while 44 families fell below 50 percent accuracy and remain provisional.
 - In lineage-stratified half-panel samples of 167 genomes, a median of 249 families was observed at least once, but only 156 retained representation in five or more genomes.
 - In 500 lineage-matched samples of 331 projection genomes with no discovery-panel accessions, a median of 245 families were detected at least once and 206 occurred in at least five genomes.
 - Of 79 Pfam-uncharacterized families, 56 were resolved by CDD and 14 more by structural comparison; nine remained unresolved by both resources tested.
@@ -80,7 +80,7 @@ The genus-blocked extension holds out complete genera and guarantees zero train/
 
 The prevalence analysis infers 533 genus labels from deposited organism names and resamples those labels as clusters. It reports both genome-weighted and genus-balanced estimates with bootstrap intervals. Because a versioned taxonomy and species tree are absent, this is a cluster-aware sensitivity analysis rather than a phylogenetic regression.
 
-The leave-one-major-lineage-out motif analysis trains on all other major groups and evaluates only blocks with at least five target sequences, twenty training sequences, and enough same-lineage other-family controls. Two families are not evaluable under those rules. The catalog-wide complete-genus analysis removes all proteins from a test sequence's inferred genus before fitting dipeptide-composition centroids. It evaluates 13,166 sequences from 245 families and reports the five unevaluable families rather than assigning them by a leaky split.
+The leave-one-major-lineage-out motif analysis trains on all other major groups and evaluates only blocks with at least five target sequences, twenty training sequences, and enough same-lineage other-family controls. Two families are not evaluable under those rules. The catalog-wide complete-genus analysis removes all proteins from a test sequence's inferred genus before fitting dipeptide-composition centroids. It evaluates 13,166 sequences from 245 families, compares performance with majority-family and uniform baselines, reports dominant misassignment pairs, and retains five families as unevaluable rather than assigning them through a leaky split.
 
 ## Catalog sequence provenance
 
@@ -107,6 +107,6 @@ The test suite checks catalog size, membership counts, projection accounting, mo
 
 ## Citation and license
 
-Citation metadata are provided in `CITATION.cff`; the version-independent archive record is available at concept DOI [10.5281/zenodo.23461089](https://doi.org/10.5281/zenodo.23461089), and the immutable version 0.5.0 record is [10.5281/zenodo.23496681](https://doi.org/10.5281/zenodo.23496681). Version 0.6.0 adds catalog-wide complete-genus validation, corrects genome-accounting flags, standardizes taxonomic labels in the manuscript, and adds explicit search-universe provenance. `MANIFEST.sha256` verifies file integrity. Code is released under the MIT License. Database records and third-party derived data remain subject to their original terms.
+Citation metadata are provided in `CITATION.cff`; the version-independent archive record is available at concept DOI [10.5281/zenodo.23461089](https://doi.org/10.5281/zenodo.23461089), and the immutable version 0.5.0 record is [10.5281/zenodo.23496681](https://doi.org/10.5281/zenodo.23496681). Version 0.7.0 adds explicit blocked-classification baselines and failure counts, treats weakly separated boundaries as provisional, and reconciles supplementary numbering. `MANIFEST.sha256` verifies file integrity. Code is released under the MIT License. Database records and third-party derived data remain subject to their original terms.
 
 Machine-readable archive metadata are also provided in `.zenodo.json` and `codemeta.json`. The current journal-specific preparation status is tracked in [docs/SCIENTIFIC_REPORTS_SUBMISSION_CHECKLIST.md](docs/SCIENTIFIC_REPORTS_SUBMISSION_CHECKLIST.md). The `manuscript/` directory contains the line-numbered Scientific Reports manuscript, its Supplementary Information, and the journal-specific cover letter.

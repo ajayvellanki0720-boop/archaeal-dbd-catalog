@@ -48,7 +48,7 @@
 ## Legacy inconsistencies retained for transparency
 
 - The raw projection metadata and matrices contain 3,192 genomes, whereas final accounting contains 3,526.
-- Version 0.6.0 corrects the `got_hit` field for the 379 HMM-rescued genomes; earlier archives retain the inconsistency.
+- Version 0.6.0 corrected the `got_hit` field for the 379 HMM-rescued genomes; version 0.7.0 adds explicit blocked-classification baselines, failure counts and supplementary-label corrections. Earlier archives retain the accounting inconsistency.
 - The original projection script does not implement the final rescue stage.
 - The original evolutionary script uses an adjacent-tip heuristic, while the archived final analysis uses IQ-TREE and Fitch parsimony.
 - The original synthesis text described the transcriptomic analysis as edgeR-style; because the source result table is unavailable and the script uses simple transformed-count tests, this claim was removed from the submission manuscript.

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.7.0 - 2026-10-20
+
+- Added majority-training-family and uniform-chance baselines to catalog-wide complete-genus validation.
+- Reported the 44 families below 50 percent blocked accuracy and the dominant nArcR-2/nArcR-12 directional confusion.
+- Reframed weakly separated family boundaries as provisional and expanded the related Methods and limitations.
+- Removed the redundant historical ten-family separability figure from the submitted supplement.
+- Reconciled supplementary figure numbering and separated PDF table identifiers from machine-readable Supplementary Data labels.
+- Rewrote the Abstract around the central question, primary result and principal limitations.
+
 ## 0.6.0 - 2026-10-20
 
 - Added catalog-wide complete-genus separability analysis for all 13,237 deposited sequences; 13,166 sequences from 245 families were evaluable.

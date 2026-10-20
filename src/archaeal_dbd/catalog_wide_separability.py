@@ -112,6 +112,7 @@ def run_catalog_wide_separability(
         candidate_indices = np.flatnonzero(nonzero)
         if len(candidate_indices) < 2:
             continue
+        majority_code = int(candidate_indices[np.argmax(train_counts[candidate_indices])])
         test_matrix = matrix[test_indices].astype(np.float64, copy=False)
         candidate_centroids = centroids[candidate_indices]
         if not np.isfinite(test_matrix).all() or not np.isfinite(candidate_centroids).all():
@@ -142,6 +143,9 @@ def run_catalog_wide_separability(
                     "held_out_genus": genus,
                     "assigned_family": family_names[assigned_code],
                     "correct": assigned_code == true_code,
+                    "majority_training_family": family_names[majority_code],
+                    "majority_baseline_correct": majority_code == true_code,
+                    "uniform_chance_probability": 1.0 / len(candidate_indices),
                     "own_centroid_similarity": true_score,
                     "best_other_centroid_similarity": best_other,
                     "separation_margin": true_score - best_other,
@@ -167,10 +171,15 @@ def run_catalog_wide_separability(
                     "accuracy_ci95_high": np.nan,
                     "median_separation_margin": np.nan,
                     "fraction_positive_margin": np.nan,
+                    "most_common_misassigned_family": "",
+                    "most_common_misassignment_count": 0,
                 }
             )
             continue
         correct = int(subset["correct"].sum())
+        errors = subset.loc[~subset["correct"], "assigned_family"]
+        most_common_error = errors.value_counts().index[0] if not errors.empty else ""
+        most_common_error_count = int(errors.value_counts().iloc[0]) if not errors.empty else 0
         low, high = _interval(correct, len(subset))
         family_rows.append(
             {
@@ -183,6 +192,8 @@ def run_catalog_wide_separability(
                 "accuracy_ci95_high": high,
                 "median_separation_margin": float(subset["separation_margin"].median()),
                 "fraction_positive_margin": float((subset["separation_margin"] > 0).mean()),
+                "most_common_misassigned_family": most_common_error,
+                "most_common_misassignment_count": most_common_error_count,
             }
         )
     families = pd.DataFrame(family_rows)
@@ -196,9 +207,12 @@ def run_catalog_wide_separability(
                 "evaluable_sequences": len(detail),
                 "evaluable_genera": detail["held_out_genus"].nunique(),
                 "micro_accuracy": float(detail["correct"].mean()),
+                "majority_training_family_baseline_accuracy": float(detail["majority_baseline_correct"].mean()),
+                "mean_uniform_chance_accuracy": float(detail["uniform_chance_probability"].mean()),
                 "macro_family_accuracy": float(evaluable["accuracy"].mean()),
                 "median_family_accuracy": float(evaluable["accuracy"].median()),
                 "families_accuracy_at_least_0_8": int((evaluable["accuracy"] >= 0.8).sum()),
+                "families_accuracy_below_0_5": int((evaluable["accuracy"] < 0.5).sum()),
                 "families_positive_median_margin": int((evaluable["median_separation_margin"] > 0).sum()),
                 "method": "leave-one-inferred-genus-out normalized dipeptide centroid",
                 "interpretation": "taxonomically blocked composition check; not HMM calibration",
